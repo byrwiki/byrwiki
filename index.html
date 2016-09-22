@@ -29,7 +29,7 @@
 <div align="center">
 
 
-  <a href="http://byr.wiki" target="_parent"><img src="images/head.png" alt="head" longdesc="http://byr.wiki"></a>
+  <a href="http://byr.wiki" target="_parent"><img src="https://img.lwl12.com/images/2016/09/23/c6ff6408a1ec2e08ed48e77ebd03881b.png" alt="head" longdesc="http://byr.wiki"></a>
 </center>
 
 <center id="dd"> 
@@ -52,13 +52,15 @@
         </p>
 		<input type="submit" value="百度" id="baidu" />
 		<input type="submit" value="谷歌" id="google" /> 
-		<input type="submit" value="搜狗" id="sougou" />
-		<input type="submit" value="360" id="searchNum" />        <input type="submit" value="微信" id="weixin2" />
-        <input type="submit" value="知乎" id="zhihu1" />
+		<input type="submit" value="京东" id="jd" />
+		<input type="submit" value="淘宝" id="taobao" />        <input type="submit" value="微信公众号" id="weixin" />
+        <input type="submit" value="知乎" id="zhihu" />
+        <input type="submit" value="微博" id="weibo" />
+         <input type="submit" value="豆瓣" id="douban" />
+        <input type="submit" value="音乐" id="gequ" />
 
-        <input type="submit" value="B内容" id="weixin3" />        <input type="submit" value="B作者" id="zhihu" />
-		<input type="submit" value="社工1" id="weixin4" />
-		<input type="submit" value="社工2" id="weixin" /> 
+        <input type="submit" value="北邮人论坛" id="weixin3" />        <input type="submit" value="Github" id="github" />
+		 
 	</form>
 	</div>
 	
@@ -67,15 +69,16 @@
 		var sInfor=document.getElementById("search");
 		var sBaidu=document.getElementById("baidu");
 		var sGoogle=document.getElementById("google");
-		var sSougou=document.getElementById("sougou");
-		var sNum=document.getElementById("searchNum");
-		var sWeixin2=document.getElementById("weixin2");
-		var sZhihu1=document.getElementById("zhihu1");
-
-		var sWeixin3=document.getElementById("weixin3");
-		var sWeixin4=document.getElementById("weixin4");
-		var sZhihu=document.getElementById("zhihu");
+		var sjd=document.getElementById("jd");
+		var staobao=document.getElementById("taobao");
 		var sWeixin=document.getElementById("weixin");
+		var sZhihu=document.getElementById("zhihu");
+		var sweibo=document.getElementById("weibo");
+		var sdouban=document.getElementById("douban");
+		var sgequ=document.getElementById("gequ");
+
+	    var sWeixin3=document.getElementById("weixin3");
+		 var sgithub=document.getElementById("github");
 			
 		//百度
 		sBaidu.onclick=function(){
@@ -87,59 +90,70 @@
 			sAddress.action="http://www.google.com/search";
 			sInfor.name="q";
 		};
-		//搜狗
-		sSougou.onclick=function(){
-			sAddress.action="http://www.sogou.com/web";
-			sInfor.name="query";
+		//京东
+		sjd.onclick=function(){
+			sAddress.action="http://search.jd.com/Search?";
+			sInfor.name="keyword";
 		}
-		//360
-		sNum.onclick=function(){
-			sAddress.action="https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&";
+		//淘宝
+		staobao.onclick=function(){
+			sAddress.action="https://s.taobao.com/search?";
 			sInfor.name="q";
 		}
-		//守夜人
-		sZhihu.onclick=function(){
-			sAddress.action="http://www.shouyeren.org/free.php";
-			sInfor.name="key";
-			//知乎sInfor.type="question";
+	
+	
+		//微信
+		sWeixin.onclick=function(){
+			sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
+			sInfor.name="query";
+			
 		}
-		
-		//知乎1
+			
+		//知乎
 		sZhihu.onclick=function(){
 			sAddress.action="https://www.zhihu.com/search";
 			sInfor.name="q";
 			sInfor.type="question";
 		}
 
-	
-		//微信号
-		sWeixin.onclick=function(){
-			sAddress.action="http://www.sgk98.com/";
-			sInfor.name="key";
-		}
-		
-		
-		//微信号2
-		sWeixin2.onclick=function(){
-			sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
-			sInfor.name="query";
 			
+		//微博
+		sweibo.onclick=function(){
+			sAddress.action="http://s.weibo.com/weibo/?";
+			//sInfor.name="q";
+			//sInfor.type="question";
 		}
+		
+			
+		//豆瓣
+		sdouban.onclick=function(){
+			sAddress.action="https://www.douban.com/search?";
+			sInfor.name="q";
+			//sInfor.type="question";
+		}
+		
+		//hao123 音乐
+		sgequ.onclick=function(){
+			sAddress.action="http://music.hao123.com/search?";
+			sInfor.name="key";
+			//sInfor.type="1";
+		}
+		
+		
 		//论坛内容
 		sWeixin3.onclick=function(){
 			sAddress.action="http://search.icybee.cn/bbs/";
 			sInfor.name="key";
 		}
 		
-			//论坛ID
-		sweixin4.onclick=function(){
-			sAddress.action="http://search.lovezxp.com/";
+			//github
+		sgithub.onclick=function(){
+			sAddress.action="https://github.com/search?";
 			//sInfor.type="author";
-			sInfor.name="text";
+			sInfor.name="q";
 			
 		}
 		
-
 
 	</script>
 		 
