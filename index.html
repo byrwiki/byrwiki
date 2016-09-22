@@ -42,13 +42,12 @@
 <table>
 <thead>
 <tr>
-  <th align="center">
+  <th align="center" class="md-checkbox">
  
           <p> 
 <div class="search">
 		<form action="http://www.baidu.com/s" method="get" target="_blank">
-		<input type="text" name="search" id="search" size="100" maxlength="200" placeholder="BUPT"/>
-        
+		<input type="text" name="search" id="search" size="100" maxlength="200" placeholder="想搜啥？一个框搞定：点击相应按钮，即可检索        "/>
         </p>
 		<input type="submit" value="百度" id="baidu" />
 		<input type="submit" value="谷歌" id="google" /> 
@@ -90,11 +89,15 @@
 			sAddress.action="http://www.google.com/search";
 			sInfor.name="q";
 		};
+		
 		//京东
 		sjd.onclick=function(){
-			sAddress.action="http://search.jd.com/Search?";
+			sAddress.action="http://search.jd.com/Search&enc=utf-8";
 			sInfor.name="keyword";
+			//sInfor.type="enc=utf-8";
+			
 		}
+		
 		//淘宝
 		staobao.onclick=function(){
 			sAddress.action="https://s.taobao.com/search?";
@@ -317,7 +320,9 @@
 </tbody></table>
 
 
-<p>更多功能，陆续更新迭代中</p></div>
+<p>更多功能，陆续更新迭代中</p>
+
+<p><a href="https://bbs.byr.cn/#!article/Picture/3157471">关于本网站</a></p> </div>
 
 <center>
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260446707'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260446707%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
