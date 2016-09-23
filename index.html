@@ -53,7 +53,7 @@
       </div>
       <div class="ui text container">
         <h1 class="ui inverted header"><i class="wikipedia icon"></i></h1>
-        <h2>北邮人导航</h2>
+        <h2>北邮人导航 &middot; BYR-Wiki</h2>
         <div class="ui inverted fluid left icon action input">
           <i class="search icon"></i>
           <input id="search-query" type="text" placeholder="输入关键字，立即搜索">
@@ -63,14 +63,16 @@
       </div>
     </div>
 
-    <div id="projects" class="ui vertical stripe segment">
-      <div class="ui middle aligned stackable grid container">
-        <div class="row">
-          <div class="center aligned column">
-            <h3 class="ui header">购物</h3>
-            <a class="ui black basic button" href="京东" target="_blank">京东</a>
+    <div id="links">
+      <div class="ui vertical stripe links segment">
+          <div class="ui equal width stackable internally celled grid">
+              <div class="center aligned row" id="pub-links"></div>
           </div>
-        </div>
+      </div>
+      <div class="ui vertical stripe links segment">
+          <div class="ui equal width stackable internally celled grid">
+              <div class="center aligned row" id="byr-links"></div>
+          </div>
       </div>
     </div>
 
@@ -105,7 +107,6 @@
     </div>
   </div>
 
-
   <!-- jQuery -->
   <script src="./assets/js/jquery-3.1.0.min.js"></script>
   <script src="./assets/js/jquery-migrate-3.0.0.min.js"></script>
@@ -114,6 +115,7 @@
   <script src="./assets/semantic/semantic.min.js"></script>
 
   <!-- Cutomized JS -->
+  <script src="./assets/js/customize-data.js"></script>
   <script src="./assets/js/customize.js"></script>
 
 </body>

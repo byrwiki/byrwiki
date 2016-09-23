@@ -35,74 +35,11 @@ $('#copyright')
 ;
 
 // search
-var searchServices = {
-  "baidu": {
-    "id": "baidu",
-    "name": "百度",
-    "url": "http://www.baidu.com/s?wd="
-  },
-  "google": {
-    "id": "google",
-    "name": "谷歌",
-    "url": "http://www.google.com/search?q="
-  },
-  "googlemirror": {
-    "id": "googlemirror",
-    "name": "谷歌镜像",
-    "url": "http://www.acgn.ren/search?q="
-  },
-  "jd": {
-    "id": "jd",
-    "name": "京东",
-    "url": "http://search.jd.com/Search?keyword="
-  },
-  "taobao": {
-    "id": "taobao",
-    "name": "淘宝",
-    "url": "https://s.taobao.com/search?q="
-  },
-  "wechat": {
-    "id": "wechat",
-    "name": "微信",
-    "url": "http://weixin.sogou.com/weixin?query="
-  },
-  "zhihu": {
-    "id": "zhihu",
-    "name": "知乎",
-    "url": "http://www.zhihu.com/search?q="
-  },
-  "weibo": {
-    "id": "weibo",
-    "name": "微博",
-    "url": "http://s.weibo.com/weibo/"
-  },
-  "douban": {
-    "id": "douban",
-    "name": "豆瓣",
-    "url": "http://www.douban.com/search?q="
-  },
-  "music": {
-    "id": "music",
-    "name": "音乐",
-    "url": "http://music.hao123.com/search?key="
-  },
-  "byr": {
-    "id": "byr",
-    "name": "北邮人论坛",
-    "url": "http://search.icybee.cn/bbs/?key="
-  },
-  "github": {
-    "id": "github",
-    "name": "GitHub",
-    "url": "http://github.com/search?q="
-  }
-};
-
-for (var i in searchServices) {
+for (var id in searchServices) {
   $('#search-services').append(
     $('<option>')
-      .attr('value', searchServices[i].id)
-      .html(searchServices[i].name)
+      .attr('value', id)
+      .html(searchServices[id].name)
   );
 };
 
@@ -116,3 +53,66 @@ $('#search-button').click(function() {
   window.open(searchServices[service].url + query, '_blank');
 });
 
+// links
+var count = 0;
+for (var pubLinkGroupName in pubLinks) {
+  ++count;
+  var pubLinksHolderId = 'pub-links-' + count;
+  $('#pub-links').append(
+    $('<div>').addClass('column')
+      .attr('id', pubLinksHolderId)
+      .append($('<h3>').addClass('ui header').html(pubLinkGroupName))
+  );
+  for (var pubLinkName in pubLinks[pubLinkGroupName]) {
+    $('#' + pubLinksHolderId).append(
+      $('<a>').addClass('ui button')
+        .attr('href', pubLinks[pubLinkGroupName][pubLinkName].url)
+        .attr('target', '_blank')
+        .html(pubLinkName)
+    );
+  };
+};
+
+var count = 0;
+for (var byrLinkGroupName in byrLinks) {
+  ++count;
+  var byrLinksHolderId = 'byr-links-' + count;
+  $('#byr-links').append(
+    $('<div>').addClass('column')
+      .attr('id', byrLinksHolderId)
+      .append($('<h3>').addClass('ui header').html(byrLinkGroupName))
+  );
+  for (var byrLinkName in byrLinks[byrLinkGroupName]) {
+    $('#' + byrLinksHolderId).append(
+      $('<a>').addClass('ui button')
+        .attr('href', byrLinks[byrLinkGroupName][byrLinkName].url)
+        .attr('target', '_blank')
+        .html(byrLinkName)
+    );
+  };
+};
+
+// var count = 0;
+// for (var linkGroupName in links) {
+//   ++count;
+//   var linksHolderId = 'links-' + count;
+//   $('#links').append(
+//     $('<div>').addClass('ui vertical stripe segment').append(
+//       $('<div>').addClass('ui middle aligned stackable grid container').append(
+//         $('<div>').addClass('row').append(
+//           $('<div>').addClass('center aligned column')
+//             .attr('id', linksHolderId)
+//             .append($('<h3>').addClass('ui header').html(linkGroupName))
+//         )
+//       )
+//     )
+//   );
+//   for (var linkName in links[linkGroupName]) {
+//     $('#' + linksHolderId).append(
+//       $('<a>').addClass('ui black basic button')
+//         .attr('href', links[linkGroupName][linkName].url)
+//         .attr('target', '_blank')
+//         .html(linkName)
+//     );
+//   };
+// };
