@@ -11,6 +11,11 @@
 
 <link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'>
 
+
+
+
+
+
 <style>
 #dd {
 	font-size: 24px;
@@ -22,7 +27,66 @@
 }
 </style>
 
-</head><body><div id='preview-contents' class='note-content'>
+</head><body>
+
+ 
+
+<a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
+ 
+            | <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+ 
+      </div>
+ 
+       <script type="text/javascript" language="javascript">
+ 
+    //加入收藏
+ 
+        function AddFavorite(sURL, sTitle) {
+ 
+            sURL = encodeURI(sURL); 
+        try{   
+ 
+            window.external.addFavorite(sURL, sTitle);   
+ 
+        }catch(e) {   
+ 
+            try{   
+ 
+                window.sidebar.addPanel(sTitle, sURL, "");   
+ 
+            }catch (e) {   
+ 
+                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+ 
+            }   
+ 
+        }
+ 
+    }
+ 
+    //设为首页
+ 
+    function SetHome(url){
+ 
+        if (document.all) {
+ 
+            document.body.style.behavior='url(#default#homepage)';
+ 
+               document.body.setHomePage(url);
+ 
+        }else{
+ 
+            alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+ 
+        }
+ 
+    }
+ 
+</script>
+
+
+
+<div id='preview-contents' class='note-content'>
                         
                     
 
@@ -47,10 +111,15 @@
           <p> 
 <div class="search">
 		<form action="http://www.baidu.com/s" method="get" target="_blank">
-		<input type="text" name="search" id="search" size="100" maxlength="200" placeholder="想搜啥？一个框搞定：点击相应按钮，即可检索        "/>
+		<input type="text" name="search" id="search" size="110" maxlength="200" placeholder="想搜啥？一个框搞定：点击相应按钮，即可检索        "/>
+        
+              
+        
         </p>
 		<input type="submit" value="百度" id="baidu" />
 		<input type="submit" value="谷歌" id="google" /> 
+        <input type="submit" value="谷歌镜像" id="google1" /> 
+        
 		<input type="submit" value="京东" id="jd" />
 		<input type="submit" value="淘宝" id="taobao" />        <input type="submit" value="微信公众号" id="weixin" />
         <input type="submit" value="知乎" id="zhihu" />
@@ -68,6 +137,8 @@
 		var sInfor=document.getElementById("search");
 		var sBaidu=document.getElementById("baidu");
 		var sGoogle=document.getElementById("google");
+		var sGoogle1=document.getElementById("google1");
+		
 		var sjd=document.getElementById("jd");
 		var staobao=document.getElementById("taobao");
 		var sWeixin=document.getElementById("weixin");
@@ -89,6 +160,13 @@
 			sAddress.action="http://www.google.com/search";
 			sInfor.name="q";
 		};
+		
+		//Google镜像
+		sGoogle1.onclick=function(){
+			sAddress.action="http://www.acgn.ren/search?newwindow=1&safe=strict&noj=1&site=webhp&source=hp&q=";
+			sInfor.name="q";
+		};
+		
 		
 		//京东
 		sjd.onclick=function(){
@@ -170,6 +248,7 @@
 
 <p>
  随时随地 Byr.wiki  记住一个就够!
+
 </p>
 
 
