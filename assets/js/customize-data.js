@@ -15,6 +15,10 @@ var searchServices = {
     "name": "谷歌镜像",
     "url": "http://www.acgn.ren/search?q="
   },
+  "googlemirror2": {
+    "name": "谷歌镜像2",
+    "url": "http://google.hbspy.moe/#q="
+  },
   "jd": {
     "name": "京东",
     "url": "http://search.jd.com/Search?keyword="
