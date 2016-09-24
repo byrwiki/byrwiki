@@ -17,7 +17,7 @@
 |欢迎|访问|=￣ω￣=|记得|收藏喔！|
 | :--------: | :--:| :--: | :--:| :--:|
 |[北邮人论坛](https://bbs.byr.cn/#!default)|[游客版论坛](http://bbs.cloud.icybee.cn)|[检索用户的回复](http://search.icybee.cn/)|[检索用户的发帖](http://search.lovezxp.com/)|[查看每日十大](http://bbss.zhengzi.me/)|
-|[看论坛数据](https://bbs.byr.cn/#!elite/path?v=/bbslists)|[App下载(安卓)](http://android.myapp.com/myapp/detail.htm?apkName=cn.byr.bbs.app)|[App下载（苹果）](https://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927?mt=8)|[论坛官方微博](http://weibo.com/byrbbs)|[论坛投票区](https://bbs.byr.cn/#!vote)|
+|[看论坛数据](https://bbs.byr.cn/#!elite/path?v=/bbslists)|[App下载（安卓）](http://android.myapp.com/myapp/detail.htm?apkName=cn.byr.bbs.app)|[App下载（苹果）](https://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927?mt=8)|[论坛官方微博](http://weibo.com/byrbbs)|[论坛投票区](https://bbs.byr.cn/#!vote)|
 |[玩转论坛指南](https://bbs.byr.cn/#!article/Talking/5852307)|待更新|待更新|待更新|待更新|待更新|
 
 
