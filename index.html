@@ -16,6 +16,10 @@
 <link href='./marxico.css' rel='stylesheet'>
 
 <style type="text/css">
+
+
+
+
 <style>
 
 background-color:#e2e2e2
@@ -36,7 +40,7 @@ background-color:#e2e2e2
 
  
 
-<a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
+<!--<a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
  
             | <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
  
@@ -87,7 +91,7 @@ background-color:#e2e2e2
  
     }
  
-</script>
+</script>-->
 
 
 
@@ -98,7 +102,37 @@ background-color:#e2e2e2
 <div align="center">
 
 
-  <a href="http://byr.wiki" target="_parent"><img src="https://img.lwl12.com/images/2016/09/23/c6ff6408a1ec2e08ed48e77ebd03881b.png" alt="head" longdesc="http://byr.wiki"></a>
+
+<script type="text/javascript">
+image0="./images/head.png"
+href0="index.html"
+alt0="开启校园生活第一步"
+
+image1="./images/head2.png"
+href1="index.html"
+alt1="时间总是浪费在了不必要的事情上"
+
+
+len=2
+
+now=new Date()
+now=now.getSeconds()
+rnd=now%len
+
+image=eval("image"+rnd)
+href=eval("href"+rnd)
+alt=eval("alt"+rnd)
+
+document.write("<a href='" + href + "'>")
+document.write("<img src='" + image + "' alt='" + alt + "'></a>")
+</script>
+
+
+
+
+
+  <!--<a href="http://byr.wiki" target="_parent"><img src="https://img.lwl12.com/images/2016/09/23/c6ff6408a1ec2e08ed48e77ebd03881b.png" alt="head" longdesc="http://byr.wiki"></a>-->
+
 </center>
 
 <center id="dd"> 
