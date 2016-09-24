@@ -1,11 +1,11 @@
-# Byrwiki
-北邮人常用的网址导航  Byr.wiki 项目开始时间 20160916 
+# BYR Eiki
+北邮人常用网址导航 http://byr.wiki/ 项目开始时间 20160916
 
 
 |   欢迎      |  访问 |  =￣ω￣=  |记得 | 收藏喔！|
 | :--------: | :--------:| :--: | :--------:| :--------:|
 | [北邮官网](http://www.bupt.edu.cn/)  | [官方导航](http://dep.bupt.edu.cn/dh/) |  [本科教务系统](http://jwxt.bupt.edu.cn/)   |[研究生教务系统](http://yjxt.bupt.edu.cn/)|[教务处](http://jwc.bupt.edu.cn/)|
-| [北邮人论坛](https://bbs.byr.cn/#!default)| [北邮人 BT](http://bt.byr.cn/) |[北邮 IPTV](http://tv.byr.cn/) |[信息门户](http://my.bupt.edu.cn)|[图书馆](http://lib.bupt.edu.cn/)|
+| [北邮人论坛](https://bbs.byr.cn/)| [北邮人BT](http://bt.byr.cn/) |[北邮IPTV](http://tv.byr.cn/) |[信息门户](http://my.bupt.edu.cn)|[图书馆](http://lib.bupt.edu.cn/)|
 |[北邮贴吧](http://tieba.baidu.com/f?kw=%B1%B1%BE%A9%D3%CA%B5%E7%B4%F3%D1%A7)|[校园网](http://nic.bupt.edu.cn/)|[北邮邮箱](http://mail.bupt.edu.cn/)|[VPN 服务](http://nic.bupt.edu.cn/list/list.php?p=3_24_1)|||
 
 
@@ -13,11 +13,11 @@
 
 
 
-## Byr 论坛相关
+## BYR论坛相关
 |   欢迎      |  访问    | =￣ω￣=  |记得 | 收藏喔！|
 | :--------: | :--:| :--: | :--:| :--:|
 | [北邮人论坛](https://bbs.byr.cn/#!default)| [游客版论坛](http://bbs.cloud.icybee.cn)|[检索用户的回复](http://search.icybee.cn/) |[检索用户的发帖](http://search.lovezxp.com/)  |[查看每日十大](http://bbss.zhengzi.me/)|
-|[看论坛数据](https://bbs.byr.cn/#!elite/path?v=/bbslists)|[App 下载(安卓)](http://android.myapp.com/myapp/detail.htm?apkName=cn.byr.bbs.app)|[APP 下载（苹果）](https://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927?mt=8)|[论坛官方微博](http://weibo.com/byrbbs)|[论坛投票区](https://bbs.byr.cn/#!vote)|
+|[看论坛数据](https://bbs.byr.cn/#!elite/path?v=/bbslists)|[App下载(安卓)](http://android.myapp.com/myapp/detail.htm?apkName=cn.byr.bbs.app)|[App下载（苹果）](https://itunes.apple.com/cn/app/bei-you-ren-lun-tan-bei-you/id1115232927?mt=8)|[论坛官方微博](http://weibo.com/byrbbs)|[论坛投票区](https://bbs.byr.cn/#!vote)|
 |[玩转论坛指南](https://bbs.byr.cn/#!article/Talking/5852307)|待更新|待更新|待更新|待更新|待更新|
 
 
@@ -40,10 +40,10 @@
 
 * 北京邮电大学：http://www.bupt.edu.cn/
 * 北京邮电大学网址导航：http://dep.bupt.edu.cn/dh/
-* 在校生-在校生-北京邮电大学：www.bupt.edu.cn/content/content.php?p=86_24_2297 
+* 在校生-在校生-北京邮电大学：http://www.bupt.edu.cn/content/content.php?p=86_24_2297
 * 北邮人论坛：http://bbs.byr.cn/
 * 北邮人BT：http://bt.byr.cn/
-* 北京邮电大学iptv：http://iptv.bupt.edu.cn/
+* 北京邮电大学IPTV：http://tv.byr.cn/
 
 ## 工具
 
@@ -57,8 +57,8 @@
 
 ## 其它
 
-* Markdown 在线编辑器： https://maxiang.io/
-* 检索 Byr 论坛里用户的回复：http://search.icybee.cn/ 
-* 检索 Byr 论坛里用户的发帖：http://search.lovezxp.com/ 
-* 游客访问 Byr 论坛的地址：http://bbs.cloud.icybee.cn
+* Markdown 在线编辑器：https://maxiang.io/
+* 检索BYR论坛里用户的回复：http://search.icybee.cn/
+* 检索BYR论坛里用户的发帖：http://search.lovezxp.com/
+* 游客访问BYR论坛的地址：http://bbs.cloud.icybee.cn
 
