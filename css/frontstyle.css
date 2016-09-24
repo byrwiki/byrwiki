@@ -1,0 +1,144 @@
+body,h1{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Microsoft Yahei', sans-serif;
+}
+
+#bg{
+	position: absolute;
+	z-index: -1;
+	background: url('./images/1.jpg')；
+	background-size: cover;
+	background-repeat:no-repeat;
+    background-attachment:fixed；
+	height: 100%;
+	width: 100%;
+
+}
+
+
+#h1{
+font-size: 20px;
+
+
+}
+
+#header{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	background: #1196EE;
+
+}
+
+#header a{
+	text-decoration: none;
+	background: transparent;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 50px;
+	margin: 0 10px 0 10px;
+	color: #DDDDDD;
+}
+
+#zb{
+	float: left;
+}
+
+#yb{
+	float: right;
+}
+
+#LOGO{
+	height: 100%;
+	width: 100%;
+}
+
+.LOGO{
+	margin-left: 0;
+}
+
+#key{
+  /*font-size: 18px;*/
+  line-height: 28px;
+  display: block;
+  float: left;
+  width: 80%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#sub-button{
+	font-size: 20px;
+	line-height: 48px;
+	display: block;
+	float: left;
+	width: 20%;
+	height: 48px;
+	padding: 0;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	border: none;
+	background-color: #00b7ff;
+}
+
+.footer h5,a{
+	text-align: center;
+	color: #fff;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+@media (min-width: 300px){
+.LOGO{
+	margin-top: 40%;
+}
+
+#key{
+	line-height: 20px;
+	padding: 7px;
+}
+
+#sub-button{
+	height: 34px;
+	font-size: 15px;
+	line-height: 34px;
+}
+}
+
+@media (min-width: 768px){
+.LOGO{
+	margin-top: 40%;
+}
+#key{
+	line-height: 28px;
+	padding: 10px;
+}
+
+#sub-button{
+	height: 48px;
+	font-size: 20px;
+	line-height: 48px;
+}
+}
+
+
+
+
+@media (min-width: 992px){
+.LOGO{
+	margin-top: 22%;
+}
+}
+
+#
