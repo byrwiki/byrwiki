@@ -111,7 +111,7 @@
           <p> 
 <div class="search">
 		<form action="http://www.baidu.com/s" method="get" target="_blank">
-		<input type="text" name="search" id="search" size="110" maxlength="200" placeholder="想搜啥？一个框搞定：点击相应按钮，即可检索        "/>
+		<input type="text" name="search" id="search" size="110" maxlength="200" placeholder="想搜啥？一个框搞定：输入关键词，点击下方相应按钮，即可检索        "/>
         
               
         
@@ -120,7 +120,7 @@
 		<input type="submit" value="谷歌" id="google" /> 
         <input type="submit" value="谷歌镜像" id="google1" /> 
         
-		<input type="submit" value="京东" id="jd" />
+		<input type="submit" value="天猫" id="tianmao" />
 		<input type="submit" value="淘宝" id="taobao" />        <input type="submit" value="微信公众号" id="weixin" />
         <input type="submit" value="知乎" id="zhihu" />
         <input type="submit" value="微博" id="weibo" />
@@ -139,7 +139,7 @@
 		var sGoogle=document.getElementById("google");
 		var sGoogle1=document.getElementById("google1");
 		
-		var sjd=document.getElementById("jd");
+		var stianmao=document.getElementById("tianmao");
 		var staobao=document.getElementById("taobao");
 		var sWeixin=document.getElementById("weixin");
 		var sZhihu=document.getElementById("zhihu");
@@ -168,14 +168,23 @@
 		};
 		
 		
-		//京东
-		sjd.onclick=function(){
-			sAddress.action="http://search.jd.com/Search&enc=utf-8";
-			sInfor.name="keyword";
+		//京东的搜索太奇怪了，
+		//sjd.onclick=function(){
+			//sAddress.action="http://search.jd.com/Search&enc=utf-8";
+			//sInfor.name="keyword";
 			//sInfor.type="enc=utf-8";
+
 			
 		}
-		
+
+		//天猫
+    stianmao.onclick=function(){
+      sAddress.action="https://list.tmall.com/search_product.htm?";
+      sInfor.name="q";
+      //sInfor.type="enc=utf-8";
+
+
+    }
 		//淘宝
 		staobao.onclick=function(){
 			sAddress.action="https://s.taobao.com/search?";
@@ -347,7 +356,7 @@
 <tr>
   <td align="center"><a href="https://bbs.byr.cn/#!default" target="_blank">北邮人论坛</a></td>
   <td align="center"><a href="http://bt.byr.cn/" target="_blank">北邮人 BT</a></td>
-  <td align="center"><a href="http://tv.bupt.edu.cn/" target="_blank">北邮 IPTV</a></td>
+  <td align="center"><a href="http://iptv.bupt.edu.cn/" target="_blank">北邮 IPTV</a></td>
   <td align="center"><a href="http://my.bupt.edu.cn/" target="_blank">信息门户</a></td>
   <td align="center"><a href="http://lib.bupt.edu.cn/" target="_blank">图书馆</a></td>
 </tr>
