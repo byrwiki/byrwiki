@@ -21,7 +21,7 @@ var searchServices = {
   },
   "jd": {
     "name": "京东",
-    "url": "http://search.jd.com/Search?keyword="
+    "url": "http://search.jd.com/Search?enc=utf-8&keyword="
   },
   "taobao": {
     "name": "淘宝",
@@ -78,7 +78,7 @@ var pubLinks = {
   },
   "工具": {
     "12306": {
-      "url": "https://kyfw.12306.cn/otn/"
+      "url": "http://www.12306.cn/"
     },
     "百度地图": {
       "url": "http://map.baidu.com/"
@@ -189,13 +189,13 @@ var byrLinks = {
       "url": "http://jwc.bupt.edu.cn/"
     },
     "北邮人论坛": {
-      "url": "https://bbs.byr.cn/#!default"
+      "url": "https://bbs.byr.cn/"
     },
     "北邮人BT": {
       "url": "http://bt.byr.cn/"
     },
     "北邮IPTV": {
-      "url": "http://tv.bupt.edu.cn/"
+      "url": "http://tv.byr.cn/"
     },
     "信息门户": {
       "url": "http://my.bupt.edu.cn/"

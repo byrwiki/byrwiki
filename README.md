@@ -6,7 +6,7 @@ forked from [Byrwiki/Byrwiki.github.io](https://github.com/Byrwiki/Byrwiki.githu
 * [北京邮电大学-校主页](http://www.bupt.edu.cn/)
 * [北邮人论坛](http://bbs.byr.cn/)
 * [北邮人BT](http://bt.byr.cn/)
-* [北京邮电大学IPTV](http://iptv.bupt.edu.cn/)
+* [北京邮电大学IPTV](http://tv.byr.cn/)
 
 ## 信息检索
 
