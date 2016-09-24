@@ -131,6 +131,9 @@ var pubLinks = {
     "知乎": {
       "url": "https://www.zhihu.com/"
     },
+    "Quora": {
+      "url": "https://www.quora.com"
+    },
     "更多": {
       "url": "http://www.hao123.com/shequ"
     }
@@ -162,11 +165,14 @@ var pubLinks = {
     "GitHub": {
       "url": "https://github.com/"
     },
-    "Quora": {
-      "url": "https://www.quora.com"
-    },
     "V2EX": {
       "url": "https://www.v2ex.com/"
+    },
+    "SegmentFault": {
+      "url": "https://segmentfault.com/"
+    },
+    "掘金": {
+      "url": "http://gold.xitu.io/"
     }
   }
 };
