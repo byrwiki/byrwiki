@@ -120,7 +120,10 @@
 			// sAddress.action="http://search.jd.com/Search?enc=utf-8&";
 			// sInfor.name="keyword";
 			// sInfor.type="enc=utf-8";
-      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + sInfor.value, "_blank");
+      var query = sInfor.value;
+      if (query != "") {
+        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+      };
 
 		}
 
