@@ -58,7 +58,7 @@ $('#search-query').keyup(function( event ) {
     var service = $('#search-services').val();
     var query = $('#search-query').val();
     console.log(query);
-    if ( query ) {
+    if ( query.length ) {
       window.open(searchServices[service].url + query, '_blank');
     };
   };
