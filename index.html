@@ -13,78 +13,78 @@
 <link rel="stylesheet" href="./css/frontstyle.css">
 <link href='./css/marxico.css' rel='stylesheet'>
   </head>
-  
-  
+
+
 <body>
 	<div id="bg">
 	</div>
-	
+
 	<ul class="nav nav-tabs" ">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-		
+
 	<div id="header">
-		
-		
+
+
 		<a href="http://byr.wiki" id="zb">北邮人导航 随时随地 Byr.wiki 一个就够了</a>
 		<!--<a href="http://life.zhangxingqiu.cn/" id="yb">作者博客</a>
 		<a href="http://720yun.com/t/e1f2exb8ayi" id="yb">北邮全景</a>-->
 
 		<a href="https://github.com/Byrwiki/Byrwiki.github.io" id="yb">网站源码</a>
 		<a href="http://byr.wiki/liuyan.html" id="yb">关于页面</a>
-		
-		
+
+
 	</div>
-	
-	
+
+
 	<div class="container">
-    
-	
+
+
 
 		<div class="row LOGO">
 			<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-3">
 				<img id="LOGO" src="./images/logo3.png"  alt="Responsive image">
 			</div>
 		</div>
-		
+
 
 		<p></p>
-		
+
 
 		<div class="search" align="center">
-    
+
 	<form action="http://www.baidu.com/s" method="get" target="_blank">
 	<input type="text" name="search" id="search" size="50" maxlength="200" placeholder="输入关键词，点击下方相应按钮，即可检索        "/>
-	
-        
+
+
 
     <P><center>
 
-	<input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" /> 
-	<input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/> 
-    <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/> 
-        
+	<input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
+	<input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
+
 	<input type="submit" value="天猫" id="tianmao" button type="button" class="btn btn-primary" />
-	<input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />        
+	<input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="微信公众号" id="weixin" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
 
-    <input type="submit" value="北邮人论坛" id="weixin3" button type="button" class="btn btn-primary"/>        
+    <input type="submit" value="北邮人论坛" id="weixin3" button type="button" class="btn btn-primary"/>
     <input type="submit" value="Github" id="github" button type="button" class="btn btn-primary"/>
-		 
+
 	</form>
 	</div>
-	
+
 	<script>
 		var sAddress=document.getElementsByTagName("form")[0];
 		var sInfor=document.getElementById("search");
 		var sBaidu=document.getElementById("baidu");
 		var sGoogle=document.getElementById("google");
 		var sGoogle1=document.getElementById("google1");
-		
+
 		var stianmao=document.getElementById("tianmao");
 		var staobao=document.getElementById("taobao");
 		var sWeixin=document.getElementById("weixin");
@@ -95,7 +95,7 @@
 
 	    var sWeixin3=document.getElementById("weixin3");
 		 var sgithub=document.getElementById("github");
-			
+
 		//百度
 		sBaidu.onclick=function(){
 			sAddress.action="http://www.baidu.com/s";
@@ -106,20 +106,20 @@
 			sAddress.action="http://www.google.com/search";
 			sInfor.name="q";
 		};
-		
+
 		//Google镜像
 		sGoogle1.onclick=function(){
 			sAddress.action="http://www.acgn.ren/search?newwindow=1&safe=strict&noj=1&site=webhp&source=hp&q=";
 			sInfor.name="q";
 		};
-		
-		
+
+
 		//京东的搜索太奇怪了，
 		//sjd.onclick=function(){
 			//sAddress.action="http://search.jd.com/Search&enc=utf-8";
 			//sInfor.name="keyword";
 			//sInfor.type="enc=utf-8";
-			
+
 		//}
 
 		//天猫
@@ -135,15 +135,15 @@
 			sAddress.action="https://s.taobao.com/search?";
 			sInfor.name="q";
 		}
-	
-	
+
+
 		//微信
 		sWeixin.onclick=function(){
 			sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
 			sInfor.name="query";
-			
+
 		}
-			
+
 		//知乎
 		sZhihu.onclick=function(){
 			sAddress.action="https://www.zhihu.com/search";
@@ -151,51 +151,51 @@
 			sInfor.type="question";
 		}
 
-			
+
 		//微博
 		sweibo.onclick=function(){
 			sAddress.action="http://s.weibo.com/weibo/?";
 			//sInfor.name="q";
 			//sInfor.type="question";
 		}
-		
-			
+
+
 		//豆瓣
 		sdouban.onclick=function(){
 			sAddress.action="https://www.douban.com/search?";
 			sInfor.name="q";
 			//sInfor.type="question";
 		}
-		
+
 		//hao123 音乐
 		sgequ.onclick=function(){
 			sAddress.action="http://music.hao123.com/search?";
 			sInfor.name="key";
 			//sInfor.type="1";
 		}
-		
-		
+
+
 		//论坛内容
 		sWeixin3.onclick=function(){
 			sAddress.action="http://search.icybee.cn/bbs/";
 			sInfor.name="key";
 		}
-		
+
 			//github
 		sgithub.onclick=function(){
 			sAddress.action="https://github.com/search?";
 			//sInfor.type="author";
 			sInfor.name="q";
-			
+
 		}
-		
+
 
 	</script>
 
-	 
+
 	</center></p>
-	        
-		    
+
+
 			</div>
 		</div>
 	<center><p>随时随地 Byr.wiki  记住一个就够!	</center></p>
@@ -249,7 +249,7 @@
   <td align="center">邮箱</td>
   <td align="center"><a href="https://mail.qq.com/" target="_blank">QQ 邮箱</a></td>
   <td align="center"><a href="http://email.163.com/" target="_blank">网易邮箱</a></td>
-  <td align="center"><a href="https://mail.google.com" target="_blank">Gmail</a></td>
+  <td align="center"><a href="https://mail.google.com/" target="_blank">Gmail</a></td>
   <td align="center">待更新</td>
 </tr>
 <tr>
@@ -282,12 +282,12 @@
 <tr>
   <td align="center">技术</td>
   <td align="center"><a href="http://www.csdn.net/" target="_blank">CSDN</a></td>
-  <td align="center"><a href="http://www.w3school.com.cn/" target="_blank">W3school</a></td>
-  <td align="center"><a href="http://stackoverflow.com/" target="_blank">Stackoverflow</a></td>
+  <td align="center"><a href="http://www.w3school.com.cn/" target="_blank">W3School</a></td>
+  <td align="center"><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a></td>
   <td align="center"><a href="https://github.com/" target="_blank">Github</a></td>
-  <td align="center"><a href="https://www.quora.com" target="_blank">Quora</a></td>
+  <td align="center"><a href="https://www.quora.com/" target="_blank">Quora</a></td>
   <td align="center"><a href="https://www.v2ex.com/" target="_blank">V2EX</a></td>
-  <td align="center"><a href="https://segmentfault.com" target="_blank">Segmentfault</a></td>
+  <td align="center"><a href="https://segmentfault.com/" target="_blank">SegmentFault</a></td>
   <td align="center"><a href="http://gold.xitu.io/" target="_blank">掘金</a></td>
   <td align="center">待更新</td>
   <td align="center">待更新</td>
@@ -316,7 +316,7 @@
   <td align="center"><a href="http://www.bupt.edu.cn/" target="_blank">北邮官网</a></td>
   <td align="center"><a href="http://dep.bupt.edu.cn/dh/" target="_blank">官方导航</a></td>
   <td align="center"><a href="http://jwxt.bupt.edu.cn/" target="_blank">本科教务系统</a></td>
-  <td align="center"><a href="http://iptv.bupt.edu.cn/" target="_blank">北邮 IPTV</a></td>
+  <td align="center"><a href="http://tv.byr.cn/" target="_blank">北邮IPTV</a></td>
   <td align="center"> </td>
   <td align="center"><a href="http://jwc.bupt.edu.cn/content/content.php?p=10_2_235" target="_blank">空余教室查询</a></td>
   <td align="center"><a href="http://jwc.bupt.edu.cn/list/list.php?p=7_50_1" target="_blank">辅修专业</a></td>
@@ -324,8 +324,8 @@
   <td align="center"><a href="http://www.xueyuanlu.cn/" target="_blank">学生校际选修</a></td>
 </tr>
 <tr>
-  <td align="center"><a href="https://bbs.byr.cn/#!default" target="_blank">北邮人论坛</a></td>
-  <td align="center"><a href="http://bt.byr.cn/" target="_blank">北邮人 BT</a></td>
+  <td align="center"><a href="https://bbs.byr.cn/" target="_blank">北邮人论坛</a></td>
+  <td align="center"><a href="http://bt.byr.cn/" target="_blank">北邮人BT</a></td>
   <td align="center"><a href="http://yjxt.bupt.edu.cn/" target="_blank">研究生教务系统</a></td>
   <td align="center"><a href="http://my.bupt.edu.cn" target="_blank">信息门户</a></td>
   <td align="center"> </td>
@@ -359,7 +359,7 @@
 </tbody></table>
 
 
-<center id="fenlei"> 
+<center id="fenlei">
   <strong>Byr 论坛相关</strong>
 </center>
 
@@ -375,7 +375,7 @@
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><a href="https://bbs.byr.cn/#!default" target="_blank">北邮人论坛</a></td>
+  <td align="center"><a href="https://bbs.byr.cn/" target="_blank">北邮人论坛</a></td>
   <td align="center"><a href="http://bbs.cloud.icybee.cn" target="_blank">游客版论坛</a></td>
   <td align="center"><a href="http://search.icybee.cn/" target="_blank">检索用户的回复</a></td>
   <td align="center"><a href="http://search.lovezxp.com/" target="_blank">检索用户的发帖</a></td>
@@ -409,7 +409,7 @@
 <thead>
 <tr>
   <th align="center"><a href="./liuyan.html" target="_blank">留言互动</th>
-  <th align="center"><a href="https://github.com/Byrwiki/Byrwiki.github.io" target="_blank">网站源码</th>
+  <th align="center"><a href="https://github.com/byrwiki/byrwiki.github.io" target="_blank">网站源码</th>
   <th align="center"><a href="http://life.zhangxingqiu.cn/" target="_blank">作者博客</th>
   <th align="center"><a href="http://720yun.com/t/e1f2exb8ayi" target="_blank">全景北邮</th>
 </tr>
@@ -440,7 +440,7 @@
 
 
 
-		
+
 </body>
 
 </html>
