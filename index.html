@@ -61,12 +61,12 @@
 
     <P><center>
 
-	<input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
-	<input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
+    <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
-  <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
-	<input type="submit" value="天猫" id="tianmao" button type="button" class="btn btn-primary" />
-	<input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
+    <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
+    <input type="submit" value="天猫" id="tianmao" button type="button" class="btn btn-primary" />
+    <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="微信公众号" id="weixin" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
@@ -74,7 +74,7 @@
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
 
     <input type="submit" value="北邮人论坛" id="weixin3" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="Github" id="github" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
 
 	</form>
 	</div>
@@ -117,9 +117,10 @@
 
 		//京东（已修复）
 		sjd.onclick=function(){
-			sAddress.action="http://search.jd.com/Search?enc=utf-8&";
-			sInfor.name="keyword";
+			// sAddress.action="http://search.jd.com/Search?enc=utf-8&";
+			// sInfor.name="keyword";
 			// sInfor.type="enc=utf-8";
+      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + sInfor.value, "_blank");
 
 		}
 
@@ -245,10 +246,10 @@
   <td align="center"><a href="http://www.iqiyi.com/" target="_blank">爱奇艺</a></td>
   <td align="center"><a href="http://www.youku.com/" target="_blank">优酷</a></td>
   <td align="center"><a href="http://open.163.com/" target="_blank">网易公开课</a></td>
-  <td align="center"><a href="http://www.bilibili.com/" target="_blank">B 站</a></td>
+  <td align="center"><a href="http://www.bilibili.com/" target="_blank">B站</a></td>
   <td align="center"><a href="http://www.hao123.com/video" target="_blank">更多</a></td>
   <td align="center">邮箱</td>
-  <td align="center"><a href="https://mail.qq.com/" target="_blank">QQ 邮箱</a></td>
+  <td align="center"><a href="https://mail.qq.com/" target="_blank">QQ邮箱</a></td>
   <td align="center"><a href="http://email.163.com/" target="_blank">网易邮箱</a></td>
   <td align="center"><a href="https://mail.google.com/" target="_blank">Gmail</a></td>
   <td align="center">待更新</td>
