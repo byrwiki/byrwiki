@@ -10,7 +10,7 @@
 	display: table
 }
 
-.container:after {
+.container:after {#e4ebf1
 	clear: both
 }
 
@@ -1490,8 +1490,8 @@ textarea.input-lg {
 }
 
 .btn-primary {
-	color: #425e7b;
-	background-color: #e4ebf1;
+	color: #F4F4F4;
+	background-color: #7AADE2;
 	border-color: rgba(0,128,255,0.05)
 }
 
