@@ -52,7 +52,7 @@ font-size: 20px;
 
 
 
-#yb{
+.yb{
 	float: right;
 }
 
@@ -60,7 +60,7 @@ font-size: 20px;
 	position: relative;
 	height: 100%;
 	width: 100%;
-	
+
 }
 
 .LOGO{
