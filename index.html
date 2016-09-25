@@ -30,7 +30,8 @@
 		<!--<a href="http://life.zhangxingqiu.cn/" id="yb">作者博客</a>
 		<a href="http://720yun.com/t/e1f2exb8ayi" id="yb">北邮全景</a>-->
 
-		<a href="https://github.com/Byrwiki/Byrwiki.github.io" id="yb">网站源码</a>
+    <a href="http://byr.wiki/new/">新版导航</a>
+    <a href="https://github.com/Byrwiki/Byrwiki.github.io" id="yb">网站源码</a>
 		<a href="http://byr.wiki/liuyan.html" id="yb">关于页面</a>
 
 
@@ -63,7 +64,7 @@
 	<input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
 	<input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
-
+  <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
 	<input type="submit" value="天猫" id="tianmao" button type="button" class="btn btn-primary" />
 	<input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="微信公众号" id="weixin" button type="button" class="btn btn-primary" />
@@ -84,8 +85,8 @@
 		var sBaidu=document.getElementById("baidu");
 		var sGoogle=document.getElementById("google");
 		var sGoogle1=document.getElementById("google1");
-
-		var stianmao=document.getElementById("tianmao");
+    var sjd=document.getElementById("jd");
+    var stianmao=document.getElementById("tianmao");
 		var staobao=document.getElementById("taobao");
 		var sWeixin=document.getElementById("weixin");
 		var sZhihu=document.getElementById("zhihu");
@@ -114,13 +115,13 @@
 		};
 
 
-		//京东的搜索太奇怪了，
-		//sjd.onclick=function(){
-			//sAddress.action="http://search.jd.com/Search&enc=utf-8";
-			//sInfor.name="keyword";
-			//sInfor.type="enc=utf-8";
+		//京东（已修复）
+		sjd.onclick=function(){
+			sAddress.action="http://search.jd.com/Search?enc=utf-8&";
+			sInfor.name="keyword";
+			// sInfor.type="enc=utf-8";
 
-		//}
+		}
 
 		//天猫
     stianmao.onclick=function(){
@@ -284,7 +285,7 @@
   <td align="center"><a href="http://www.csdn.net/" target="_blank">CSDN</a></td>
   <td align="center"><a href="http://www.w3school.com.cn/" target="_blank">W3School</a></td>
   <td align="center"><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a></td>
-  <td align="center"><a href="https://github.com/" target="_blank">Github</a></td>
+  <td align="center"><a href="https://github.com/" target="_blank">GitHub</a></td>
   <td align="center"><a href="https://www.quora.com/" target="_blank">Quora</a></td>
   <td align="center"><a href="https://www.v2ex.com/" target="_blank">V2EX</a></td>
   <td align="center"><a href="https://segmentfault.com/" target="_blank">SegmentFault</a></td>
@@ -338,7 +339,7 @@
   <td align="center"><a href="http://tieba.baidu.com/f?kw=%B1%B1%BE%A9%D3%CA%B5%E7%B4%F3%D1%A7" target="_blank">北邮贴吧</a></td>
   <td align="center"><a href="http://nic.bupt.edu.cn/" target="_blank">校园网</a></td>
   <td align="center"><a href="http://mail.bupt.edu.cn/" target="_blank">北邮邮箱</a></td>
-  <td align="center"><a href="http://nic.bupt.edu.cn/list/list.php?p=3_24_1" target="_blank">VPN 服务</a></td>
+  <td align="center"><a href="http://nic.bupt.edu.cn/list/list.php?p=3_24_1" target="_blank">VPN服务</a></td>
   <td align="center"> </td>
   <td align="center"><a href="http://xsc.bupt.edu.cn/content/content.php?p=27_26_48" target="_blank">申请护照通行证</a></td>
   <td align="center"><a href="http://xsc.bupt.edu.cn/content/content.php?p=27_26_48" target="_blank">补办学生证</a></td>
