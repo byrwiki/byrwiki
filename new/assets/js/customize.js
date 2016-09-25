@@ -57,7 +57,9 @@ $('#search-query').keyup(function( event ) {
   if (event.key == 'Enter') {
     var service = $('#search-services').val();
     var query = $('#search-query').val();
-    window.open(searchServices[service].url + query, '_blank');
+    if (query != '') {
+      window.open(searchServices[service].url + query, '_blank');
+    };
   };
 });
 
