@@ -29,7 +29,7 @@ $('#copyright')
   .html(
    function(){
      var date = new Date();
-     return '&copy; ' +  date.getFullYear() + ' TEELAB';
+     return '&copy; ' +  date.getFullYear() + ' BYR Wiki';
    }
   )
 ;
