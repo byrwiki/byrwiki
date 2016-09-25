@@ -50,7 +50,9 @@ $('#search-services')
 $('#search-button').click(function() {
   var service = $('#search-services').val();
   var query = $('#search-query').val();
-  window.open(searchServices[service].url + query, '_blank');
+  if ( query ) {
+    window.open(searchServices[service].url + query, '_blank');
+  };
 });
 
 $('#search-query').keyup(function( event ) {
@@ -58,7 +60,7 @@ $('#search-query').keyup(function( event ) {
     var service = $('#search-services').val();
     var query = $('#search-query').val();
     console.log(query);
-    if ( query.length ) {
+    if ( query ) {
       window.open(searchServices[service].url + query, '_blank');
     };
   };
