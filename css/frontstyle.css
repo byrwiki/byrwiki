@@ -30,35 +30,41 @@ font-size: 20px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 45px;
-	background: #1196EE;
+	height: 25px;
+	background: #7B7788;
 
 }
 
 #header a{
+	font-family: 'Microsoft Yahei', sans-serif;
 	text-decoration: none;
 	background: transparent;
-	font-size: 22px;
+	font-size: 15px;
 	font-weight: bold;
-	line-height: 50px;
+	line-height: 25px;
 	margin: 0 10px 0 10px;
-	color: #DDDDDD;
+	color: #FFFFFF;
 }
 
 #zb{
 	float: left;
 }
 
+
+
 #yb{
 	float: right;
 }
 
 #LOGO{
+	position: relative;
 	height: 100%;
 	width: 100%;
+	
 }
 
 .LOGO{
+	position: relative;
 	margin-left: 0;
 }
 
