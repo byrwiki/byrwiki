@@ -2990,7 +2990,9 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .input-group-addon:first-child {
-	border-right: 0
+	border-right: 0;
+	
+    background-color: rgb(135, 185, 236);
 }
 
 .input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:last-child>.btn,.input-group-btn:last-child>.dropdown-toggle,.input-group-btn:first-child>.btn:not(:first-child) {
