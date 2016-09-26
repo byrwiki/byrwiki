@@ -35,7 +35,7 @@ $('#copyright')
 ;
 
 // search
-for (var id in searchServices) {
+for ( var id in searchServices ) {
   $('#search-services').append(
     $('<option>')
       .attr('value', id)
@@ -52,23 +52,65 @@ $('#search-button').click(function() {
   var query = $('#search-query').val();
   if ( query ) {
     window.open(searchServices[service].url + query, '_blank');
+    $('#search-div').removeClass('error');
+    $('#search-query').attr('placeholder', '立即搜索');
+  }
+  else {
+    $('#search-div').addClass('error');
+    $('#search-query').attr('placeholder', '请输入搜索内容');
+  };
+});
+
+// $('#search-query').keyup(function( event ) {
+//   if ( event.key == 'Enter' ) {
+//     var service = $('#search-services').val();
+//     var query = $('#search-query').val();
+//     if ( query ) {
+//       window.open(searchServices[service].url + query, '_blank');
+//       $('#search-div').removeClass('error');
+//       $('#search-query').attr('placeholder', '立即搜索');
+//     }
+//     else {
+//       $('#search-div').addClass('error');
+//       $('#search-query').attr('placeholder', '请输入搜索内容');
+//     };
+//   };
+// });
+
+$(window).keyup(function( event ) {
+  var windowTop = $(window).scrollTop();
+  var windowHeight = $(window).innerHeight();
+  var windowBottom = windowTop + windowHeight;
+  var searchBoxTop = $('#search-div').offset().top;
+  var searchBoxHeight = $('#search-div').innerHeight();
+  var searchBoxBottom = searchBoxTop + searchBoxHeight;
+  if ( event.key == 'Enter' && searchBoxBottom > windowTop && searchBoxTop < windowBottom ) {
+    var service = $('#search-services').val();
+    var query = $('#search-query').val();
+    if ( query ) {
+      window.open(searchServices[service].url + query, '_blank');
+      $('#search-div').removeClass('error');
+      $('#search-query').attr('placeholder', '立即搜索');
+    }
+    else {
+      $('#search-div').addClass('error');
+      $('#search-query').attr('placeholder', '请输入搜索内容');
+    };
   };
 });
 
 $('#search-query').keyup(function( event ) {
-  if (event.key == 'Enter') {
-    var service = $('#search-services').val();
-    var query = $('#search-query').val();
-    console.log(query);
-    if ( query ) {
-      window.open(searchServices[service].url + query, '_blank');
+  if ( event.key ) {
+    if ($('#search-query').val()) {
+      $('#search-div').removeClass('error');
+      $('#search-query').attr('placeholder', '立即搜索');
     };
   };
 });
 
 // links
 var count = 0;
-for (var pubLinkGroupName in pubLinks) {
+for ( var pubLinkGroupName in pubLinks ) {
   ++count;
   var pubLinksHolderId = 'pub-links-' + count;
   $('#pub-links').append(
@@ -76,7 +118,7 @@ for (var pubLinkGroupName in pubLinks) {
       .attr('id', pubLinksHolderId)
       .append($('<h3>').addClass('ui header').html(pubLinkGroupName))
   );
-  for (var pubLinkName in pubLinks[pubLinkGroupName]) {
+  for ( var pubLinkName in pubLinks[pubLinkGroupName] ) {
     $('#' + pubLinksHolderId).append(
       $('<a>').addClass('ui button')
         .attr('href', pubLinks[pubLinkGroupName][pubLinkName].url)
@@ -87,7 +129,7 @@ for (var pubLinkGroupName in pubLinks) {
 };
 
 var count = 0;
-for (var byrLinkGroupName in byrLinks) {
+for ( var byrLinkGroupName in byrLinks ) {
   ++count;
   var byrLinksHolderId = 'byr-links-' + count;
   $('#byr-links').append(
@@ -95,7 +137,7 @@ for (var byrLinkGroupName in byrLinks) {
       .attr('id', byrLinksHolderId)
       .append($('<h3>').addClass('ui header').html(byrLinkGroupName))
   );
-  for (var byrLinkName in byrLinks[byrLinkGroupName]) {
+  for ( var byrLinkName in byrLinks[byrLinkGroupName] ) {
     $('#' + byrLinksHolderId).append(
       $('<a>').addClass('ui button')
         .attr('href', byrLinks[byrLinkGroupName][byrLinkName].url)
@@ -106,7 +148,7 @@ for (var byrLinkGroupName in byrLinks) {
 };
 
 // var count = 0;
-// for (var linkGroupName in links) {
+// for ( var linkGroupName in links ) {
 //   ++count;
 //   var linksHolderId = 'links-' + count;
 //   $('#links').append(
@@ -120,7 +162,7 @@ for (var byrLinkGroupName in byrLinks) {
 //       )
 //     )
 //   );
-//   for (var linkName in links[linkGroupName]) {
+//   for ( var linkName in links[linkGroupName] ) {
 //     $('#' + linksHolderId).append(
 //       $('<a>').addClass('ui black basic button')
 //         .attr('href', links[linkGroupName][linkName].url)
