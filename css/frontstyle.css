@@ -10,8 +10,7 @@ body,h1{
 	z-index: -1;
 	background: url('./images/1.jpg')；
 	background-size: cover;
-	background-repeat:no-repeat;
-    background-attachment:fixed；
+
 	height: 100%;
 	width: 100%;
 
