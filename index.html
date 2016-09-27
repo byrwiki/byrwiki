@@ -43,7 +43,10 @@
 				<img id="LOGO" src="./images/logo3.png"  alt="Responsive image">
 			</div>
 		</div>
+		
 		<p></p>
+		
+		
 <div class="input-group input-group-lg">
   <span class="input-group-addon">全能搜</span>
   <form action="http://www.baidu.com/s" method="get" target="_blank">
@@ -53,16 +56,16 @@
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
+  <!--  <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />-->
     <input type="submit" value="天猫" id="tianmao" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
-    <input type="submit" value="微信公众号" id="weixin" button type="button" class="btn btn-primary" />
+<!--    <input type="submit" value="微信公众号" id="weixin" button type="button" class="btn btn-primary" />-->
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
+    <!--<input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>-->
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="北邮人论坛" id="weixin3" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="北邮贴吧" id="tieba" button type="button" class="btn btn-primary"/>
+   <!-- <input type="submit" value="北邮贴吧" id="tieba" button type="button" class="btn btn-primary"/>-->
     
     <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
 	</form>
@@ -100,16 +103,19 @@
 			sAddress.action="http://www.acgn.ren/search?newwindow=1&safe=strict&noj=1&site=webhp&source=hp&q=";
 			sInfor.name="q";
 		};
-		//京东（已修复）
-		sjd.onclick=function(){
-			// sAddress.action="http://search.jd.com/Search?enc=utf-8&";
-			// sInfor.name="keyword";
-			// sInfor.type="enc=utf-8";
-      var query = sInfor.value;
-      if ( query ) {
-        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-      };
-		}
+		
+//		//京东（已修复）在移动端访问会跳出两次窗口，
+//		sjd.onclick=function(){
+//			// sAddress.action="http://search.jd.com/Search?enc=utf-8&";
+//			// sInfor.name="keyword";
+//			// sInfor.type="enc=utf-8";
+//    var query = sInfor.value;
+//    if ( query ) {
+//      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+//    };
+//		}
+//		
+		
 		//天猫
     stianmao.onclick=function(){
       sAddress.action="https://list.tmall.com/search_product.htm?";
@@ -121,23 +127,29 @@
 			sAddress.action="https://s.taobao.com/search?";
 			sInfor.name="q";
 		}
-		//微信
-		sWeixin.onclick=function(){
-			sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
-			sInfor.name="query";
-		}
+//		//微信  检索需求较小，已下架
+//		sWeixin.onclick=function(){
+//			sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
+//			
+//			sInfor.name="query";
+//		
+//		}
+		
+		
 		//知乎
 		sZhihu.onclick=function(){
 			sAddress.action="https://www.zhihu.com/search";
 			sInfor.name="q";
 			sInfor.type="question";
 		}
-		//微博
-		sweibo.onclick=function(){
-			sAddress.action="http://s.weibo.com/weibo/?";
-			//sInfor.name="q";
-			//sInfor.type="question";
-		}
+//		//微博 （检索异常）
+//		sweibo.onclick=function(){
+//			sAddress.action="http://s.weibo.com/weibo/?";
+//			//sInfor.name="q";
+//			//sInfor.type="question";
+//		}
+//		
+		
 		//豆瓣
 		sdouban.onclick=function(){
 			sAddress.action="https://www.douban.com/search?";
@@ -156,14 +168,14 @@
 			sInfor.name="key";
 		}
 		
-		//北京邮电大学贴吧
-		stieba.onclick=function(){
-			var query = sInfor.value;
-      if ( query ) {
-        window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
-      };
-		}
-		
+//		//北京邮电大学贴吧 （引用的京东搜索代码，在移动端出现相同的访问异常）
+//		stieba.onclick=function(){
+//			var query = sInfor.value;
+//    if ( query ) {
+//      window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
+//    };
+//		}
+//		
 		
 			//github
 		sgithub.onclick=function(){
@@ -344,7 +356,7 @@
   <td align="center"><a href="http://search.lovezxp.com/" target="_blank">检索用户的发帖</a></td>
   <td align="center"></td>
   <td align="center"><a href="http://weibo.com/bupt" target="_blank">北邮官方微博</a></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474858847&amp;ver=1&amp;signature=LGICxl5dSPEkl9LbsuOtPaCZ2BY6AnL6T-mm8hnxVO3JLhkcnCl%2aaMY8KiB8p9ojbr1u4CjIEBSrFdgLAx%2ansA==" target="_blank">官方微信</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=buptweixin&ie=utf8" target="_blank">官方微信</a></td>
   <td align="center"><a href="http://weibo.com/buptxueshengchu" target="_blank">学生处微博</a></td>
 </tr>
 <tr>
@@ -354,8 +366,8 @@
   <td align="center"><a href="http://weibo.com/byrbbs" target="_blank">论坛官方微博</a></td>
   <td align="center"></td>
   <td align="center"><a href="http://buptfoto.com/" target="_blank">摄影社官网</a></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474858989&amp;ver=1&amp;signature=s%2aqb84%2agEaCty3IycqU0NCCXkA3NaHh-WlVgrNmwWL7KE-h-0ELX4iSjyOVvV7PSRTtswo2eh%2amdSyeO7Li5gA==" target="_blank">摄影社微信</a></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474858989&amp;ver=1&amp;signature=uCLGdUOI9b4IcuP5jaEt0MPc2MsSwPPLPsUOGdi2BuYK4G4I1RpY7xkxEn5U%2ad3A-8zPFWZ3r88wTbU-AD0lag==" target="_blank">学生处微信</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=BUPTphotography&ie=utf8" target="_blank">摄影社微信</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=gh_00461f80b3ad&ie=utf8" target="_blank">学生处微信</a></td>
 </tr>
 <tr>
   <td align="center"><a href="https://bbs.byr.cn/#!article/Talking/5852307" target="_blank">玩转论坛指南</a></td>
@@ -363,8 +375,8 @@
   <td align="center"><a href="http://bbs.cloud.icybee.cn/board/Job" target="_blank">毕业生找工作</a></td>
   <td align="center"><a href="http://bbs.cloud.icybee.cn/board/Feeling" target="_blank">情感天空专版</a></td>
   <td align="center"></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474859014&amp;ver=1&amp;signature=2AXnQeBM1A2yy6t7tly0wuWYWwycEO8r5rL2ugN-w6YtGEyY%2aAvlIhsl2FlzRRGyaZFmMnrIioBWRcZg48j9og==" target="_blank">信通学院风流</a></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474860148&amp;ver=1&amp;signature=j%2aLRpmFe9tHLmzpXmyvaf4YY3N4wftL7IxTT1aHZm4xZ8cR2n%2a-%2artK6iWCd8USx0pdDb-3VJ8VP2h7w910AkQ==" target="_blank">北邮青年微信</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=fengliu_buptsice&ie=utf8" target="_blank">信通学院风流</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=buptyouth&ie=utf8" target="_blank">北邮青年微信</a></td>
   <td align="center"><a href="http://weibo.com/buptyh" target="_blank">学生会微博</a></td>
 </tr>
 <tr>
@@ -374,8 +386,8 @@
   <td align="center"></td>
   <td align="center"></td>
   <td align="center"><a href="http://weibo.com/buptyh" target="_blank">研究生会微博</a></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474858978&amp;ver=1&amp;signature=8cxas4JYXp%2a%2a6432XLTacO%2aAnJS%2aRA2vdGNNEnKagyTIpVAOWOfdLbE9RHKYFD9GXTWIXg8HSz8By6eqbv4dFw==" target="_blank">研究生会微信</a></td>
-  <td align="center"><a href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1474860043&amp;ver=1&amp;signature=zp%2agJFlJjnzSHbStOHFsnQEp7Fc9pd8NUZsz7qVjr-FiVLQpgagZSnVdVAoczPfGohCXy4RiJKEupZGNrG7RsQ==" target="_blank">学生会微信</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=buptyanhui&ie=utf8" target="_blank">研究生会微信</a></td>
+  <td align="center"><a href="http://weixin.sogou.com/weixin?type=1&query=buptstu&ie=utf8" target="_blank">学生会微信</a></td>
 </tr>
 </tbody></table>
  </table>
