@@ -3,7 +3,8 @@
 <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-<head><title>Byr.wiki 北邮人导航</title>
+<head>
+	<title>Byr.wiki 北邮人导航</title>
 
 <link rel="shortcut icon" href="favicon.ico">
 
@@ -14,23 +15,25 @@
 <link rel="stylesheet" href="./css/frontstyle.css">
 
 <link href='./css/marxico.css' rel='stylesheet'>
+
   </head>
 
 
 <body>
 	<!--<div id="bg">-->
 
+<!--顶部导航-->
 
-	<ul class="nav nav-tabs" ">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<ul class="nav nav-tabs" ">
 	<div id="header">
 		<a href="http://byr.wiki" id="zb" style="font-size: 19px;">北邮人导航</a>
 
 
+	
 
-
-		<!--<a href="http://life.zhangxingqiu.cn/" class="yb">作者博客</a>
+<!--<a href="http://life.zhangxingqiu.cn/" class="yb">作者博客</a>
 		<a href="http://720yun.com/t/e1f2exb8ayi" class="yb">北邮全景</a>-->
+		
     <a href="https://github.com/byrwiki/byrwiki.github.io" class="yb">网站源码</a>
 
     <!--<a href="./liuyan.html" class="yb">关于页面</a>
@@ -41,12 +44,18 @@
 
 
 	</div>
-	<div class="container">
+</ul>
+	
+	
+	
+<div class="container">
+	
 		<div class="row LOGO">
 			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-				<img id="LOGO" src="http://byr.zhangxingqiu.cn/images/logo3.png"  alt="Responsive image">
+				<img id="LOGO" src="http://byr.zhangxingqiu.cn/images/logocaise.png"  alt="Responsive image">
 			</div>
 		</div>
+
 
 		<p></p>
 
@@ -72,6 +81,9 @@
    <!-- <input type="submit" value="北邮贴吧" id="tieba" button type="button" class="btn btn-primary"/>-->
 
     <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
+  <!--  <input type="submit" value="各种网盘" id="wangpan" button type="button" class="btn btn-primary"/>-->
+    
+    
 	</form>
 	</div>
 	<script>
@@ -92,6 +104,8 @@
 	    var sWeixin3=document.getElementById("weixin3");
 	     var stieba=document.getElementById("tieba");
 		 var sgithub=document.getElementById("github");
+		 var swangpan=document.getElementById("wangpan");
+		 
 		//百度
 		sBaidu.onclick=function(){
 			sAddress.action="http://www.baidu.com/s";
@@ -187,13 +201,28 @@
 			//sInfor.type="author";
 			sInfor.name="q";
 		}
+		
+			//胖次网，网盘资源检索
+		//swangpan.onclick=function(){
+			//sAddress.action="http://www.panc.cc/s";
+			//sInfor.type="author";
+			//sInfor.name="q";
+		}
+		
+		
+		
+		
 	</script>
 	</center></p>
 			</div>
 		</div>
 	<center>
+		
 
 		<p>随时随地 Byr.wiki  记住一个就够!	</center></p>
+		
+
+		
 <p>
 <center>
 <div class="table-responsive">
@@ -410,8 +439,13 @@
 </tr>
 </thead>
 </table>
+
+</div>
 </center>
 </p>
+
+
+
 <center>
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260446707'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260446707%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 </center>

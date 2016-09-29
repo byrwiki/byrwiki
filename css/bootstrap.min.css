@@ -5556,3 +5556,8 @@ td.visible-print,th.visible-print {
 	display:none!important
 }
 }
+
+
+
+.panel{margin:0px;padding:5px;text-align:center;background:#e5eecc;border:solid 1px #c3c3c3;display:none;}
+.flip{margin:0px;padding:5px;text-align:center;background:#e5eecc;border:solid 1px #c3c3c3;}

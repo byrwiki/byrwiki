@@ -1,8 +1,8 @@
 .container {
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px
+	padding-left: 50px;
+	padding-right: 50px
 }
 
 .container:before,.container:after {
@@ -7346,7 +7346,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 {
 }
 
 .container {
-	margin-bottom: 180px;
+	margin-bottom: 160px;
 	text-align: justify
 }
 
