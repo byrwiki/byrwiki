@@ -94,6 +94,7 @@ height: 100%;
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="胖次" id="panci" button type="button" class="btn btn-primary"/>
     <input type="submit" value="北邮人论坛" id="weixin3" button type="button" class="btn btn-primary"/>
    <!-- <input type="submit" value="北邮贴吧" id="tieba" button type="button" class="btn btn-primary"/>-->
 
@@ -211,6 +212,15 @@ height: 100%;
 			sInfor.name="key";
 			//sInfor.type="1";
 		}
+
+    $('#panci').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://www.panc.cc/s/" + query, +"/td_0" "_blank");
+        return false;
+      };
+    });
+
 		//论坛内容
 		sWeixin3.onclick=function(){
 			sAddress.action="http://search.icybee.cn/bbs/";
