@@ -135,16 +135,23 @@ height: 100%;
 		};
 
     //京东（已修复）在移动端访问会跳出两次窗口
-    sjd.onclick=function(){
-      // sAddress.action="http://search.jd.com/Search?enc=utf-8&";
-      // sInfor.name="keyword";
-      // sInfor.type="enc=utf-8";
-      var query = sInfor.value;
+    // sjd.onclick=function(){
+    //   // sAddress.action="http://search.jd.com/Search?enc=utf-8&";
+    //   // sInfor.name="keyword";
+    //   // sInfor.type="enc=utf-8";
+    //   var query = sInfor.value;
+    //   if ( query ) {
+    //   window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+    //   return false;
+    // };
+    // }
+    $('#jd').click(function() {
+      var query = $('#search').val();
       if ( query ) {
-      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-      return false;
-    };
-    }
+        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+        return false;
+      };
+    });
 
 
 		//天猫
