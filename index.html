@@ -17,7 +17,7 @@
 <link href='./css/marxico.css' rel='stylesheet'>
 
 <style type="text/css">
-body 
+body
 {
 background-image:url(https://img.lwl12.com/images/2016/09/30/8efbb9bb670d968c4315542241d7212c.jpg);
 background-repeat:no-repeat;
@@ -32,7 +32,7 @@ height: 100%;
 
 <body>
 	<!--<div id="bg">-->
-	
+
 
 <!--顶部导航-->
 
@@ -41,11 +41,11 @@ height: 100%;
 		<a href="http://byr.wiki" id="zb" style="font-size: 19px;">北邮人导航</a>
 
 
-	
+
 
 <!--<a href="http://life.zhangxingqiu.cn/" class="yb">作者博客</a>
 		<a href="http://720yun.com/t/e1f2exb8ayi" class="yb">北邮全景</a>-->
-		
+
     <a href="https://github.com/byrwiki/byrwiki.github.io" class="yb">网站源码</a>
 
     <!--<a href="./liuyan.html" class="yb">关于页面</a>
@@ -57,11 +57,11 @@ height: 100%;
 
 	</div>
 </ul>
-	
-	
-	
+
+
+
 <div class="container">
-	
+
 		<div class="row LOGO">
 			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
 				<a href="./index.html"><img id="LOGO" src="http://byr.zhangxingqiu.cn/images/logocaise.png"  alt="Responsive image"></a>
@@ -94,8 +94,8 @@ height: 100%;
 
     <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
   <!--  <input type="submit" value="各种网盘" id="wangpan" button type="button" class="btn btn-primary"/>-->
-    
-    
+
+
 	</form>
 	</div>
 	<script>
@@ -117,7 +117,7 @@ height: 100%;
 	     var stieba=document.getElementById("tieba");
 		 var sgithub=document.getElementById("github");
 		 var swangpan=document.getElementById("wangpan");
-		 
+
 		//百度
 		sBaidu.onclick=function(){
 			sAddress.action="http://www.baidu.com/s";
@@ -134,17 +134,18 @@ height: 100%;
 			sInfor.name="q";
 		};
 
-//		//京东（已修复）在移动端访问会跳出两次窗口，
-//		sjd.onclick=function(){
-//			// sAddress.action="http://search.jd.com/Search?enc=utf-8&";
-//			// sInfor.name="keyword";
-//			// sInfor.type="enc=utf-8";
-//    var query = sInfor.value;
-//    if ( query ) {
-//      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-//    };
-//		}
-//
+    //京东（已修复）在移动端访问会跳出两次窗口
+    sjd.onclick=function(){
+      // sAddress.action="http://search.jd.com/Search?enc=utf-8&";
+      // sInfor.name="keyword";
+      // sInfor.type="enc=utf-8";
+      var query = sInfor.value;
+      if ( query ) {
+      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+      return false;
+    };
+    }
+
 
 		//天猫
     stianmao.onclick=function(){
@@ -213,28 +214,28 @@ height: 100%;
 			//sInfor.type="author";
 			sInfor.name="q";
 		}
-		
+
 			//胖次网，网盘资源检索
 		//swangpan.onclick=function(){
 			//sAddress.action="http://www.panc.cc/s";
 			//sInfor.type="author";
 			//sInfor.name="q";
 		//}
-		
-		
-		
-		
+
+
+
+
 	</script>
 	</center></p>
 			</div>
 		</div>
 	<center>
-		
+
 
 		<p>随时随地 Byr.wiki  记住一个就够!	</center></p>
-		
 
-		
+
+
 <p>
 <center>
 <div class="table-responsive">
@@ -387,7 +388,7 @@ height: 100%;
  <th align="center" colspan="4" bgcolor="#D0DBEA">Byr 论坛相关</th>
   <th align="center"></th>
  <th align="center" colspan="3" bgcolor="#D0DBEA">新媒体平台</th>
- 
+
 </tr>
 </thead>
 <tbody><tr>
@@ -457,6 +458,11 @@ height: 100%;
 <center>
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260446707'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260446707%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 </center>
+
+<!-- jQuery -->
+<script src="./assets/js/jquery-3.1.0.min.js"></script>
+<script src="./assets/js/jquery-migrate-3.0.0.min.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
