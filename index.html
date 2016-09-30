@@ -86,7 +86,7 @@ height: 100%;
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
 <!--    <input type="submit" value="微信公众号" id="weixin" button type="button" class="btn btn-primary" />-->
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
-    <!--<input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>-->
+    <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="北邮人论坛" id="weixin3" button type="button" class="btn btn-primary"/>
@@ -134,7 +134,7 @@ height: 100%;
 			sInfor.name="q";
 		};
 
-    //京东（已修复）在移动端访问会跳出两次窗口
+    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
     // sjd.onclick=function(){
     //   // sAddress.action="http://search.jd.com/Search?enc=utf-8&";
     //   // sInfor.name="keyword";
@@ -186,7 +186,13 @@ height: 100%;
 //			//sInfor.name="q";
 //			//sInfor.type="question";
 //		}
-//
+    $('#weibo').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://s.weibo.com/weibo/" + query, "_blank");
+        return false;
+      };
+    });
 
 		//豆瓣
 		sdouban.onclick=function(){
