@@ -104,13 +104,13 @@ font-size: 20px;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 40px;
+	height: 60px;
 	background: rgba(88, 134, 183, 0.83);
 }
 
 @media (min-width: 300px){
 .LOGO{
-	margin-top: 40%;
+	margin-top: 50%;
 }
 
 #key{
@@ -127,7 +127,7 @@ font-size: 20px;
 
 @media (min-width: 768px){
 .LOGO{
-	margin-top: 40%;
+	margin-top: 25%;
 }
 #key{
 	line-height: 28px;
