@@ -182,7 +182,17 @@ font-size: 20px;
 	
 }
 
-#lianjie{
+#lianjie1{
+	text-align: center;
+	position: auto;
+	color:red;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	
+}
+
+#lianjie {
 	text-align: center;
 	position: auto;
 	color: dodgerblue;
@@ -190,6 +200,7 @@ font-size: 20px;
 	font-family: "微软雅黑";
 	
 }
+
 
 #fenlei{
 	text-align: center;
