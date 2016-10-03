@@ -1,4 +1,4 @@
-body,h1{
+body,h1,a{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -10,7 +10,6 @@ body,h1{
 	z-index: -1;
 	background: url('./images/1.jpg')；
 	background-size: cover;
-
 	height: 100%;
 	width: 100%;
 
@@ -44,6 +43,16 @@ font-size: 20px;
 	margin: 0 10px 0 10px;
 	color: #FFFFFF;
 }
+
+
+#zhongjian{
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+
+	
+}
+
 
 #zb{
 	float: left;
