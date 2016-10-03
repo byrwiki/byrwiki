@@ -18,8 +18,9 @@
 * 在北邮人论坛里的宣传贴地址：http://bbs.cloud.icybee.cn/article/Picture/3157471 （免登陆）
 * 在北京邮电大学贴吧宣传贴地址：http://tieba.baidu.com/p/4798058286
 * 在知乎专栏里的宣传：
-> * [或许你该换个浏览器主页了](https://zhuanlan.zhihu.com/p/22728795)
-> * [这可能是重度搜索爱好者的福音](https://zhuanlan.zhihu.com/p/22684884)
+>[或许你该换个浏览器主页了](https://zhuanlan.zhihu.com/p/22728795)
+
+>[这可能是重度搜索爱好者的福音](https://zhuanlan.zhihu.com/p/22684884)
 
 # 网站特色
 
