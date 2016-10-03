@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 <head>
-  <title>Byr.wiki·北邮人导航</title>
+	<title>Byr.wiki·北邮人导航</title>
 
 <link rel="shortcut icon" href="favicon.ico">
 
@@ -25,7 +25,7 @@ background-repeat:no-repeat;
 background-attachment:fixed;
 background-size: cover;
 height: 100%;
-  width: 100%;
+	width: 100%;
 }
 </style>-->
 
@@ -37,20 +37,20 @@ height: 100%;
 
 
 <body>
-  <!--<div id="bg">-->
+	<!--<div id="bg">-->
 
 
 <!--顶部导航-->
 
 <ul class="nav nav-tabs" ">
-  <div id="header">
-    <a href="http://byr.wiki" id="zb" style="font-size: 19px;">北邮人导航</a>
+	<div id="header">
+		<a href="http://byr.wiki" id="zb" style="font-size: 19px;">北邮人导航</a>
 
 
 
 
 <!--<a href="http://life.zhangxingqiu.cn/" class="yb">作者博客</a>
-    <a href="http://720yun.com/t/e1f2exb8ayi" class="yb">北邮全景</a>-->
+		<a href="http://720yun.com/t/e1f2exb8ayi" class="yb">北邮全景</a>-->
 
     <a href="https://github.com/byrwiki/byrwiki.github.io" class="yb">网站源码</a>
 
@@ -61,29 +61,29 @@ height: 100%;
     <a href="http://byr123.irockbunny.com/" class="yb">新版导航</a>
 
 
-  </div>
+	</div>
 </ul>
 
 
 
 <div class="container">
 
-    <div class="row LOGO">
-      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-        <a href="./index.html"><img id="LOGO" src="http://byr.zhangxingqiu.cn/images/logocaise.png"  alt="Responsive image"></a>
-      </div>
-    </div>
+		<div class="row LOGO">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
+				<a href="./index.html"><img id="LOGO" src="http://byr.zhangxingqiu.cn/images/logocaise.png"  alt="Responsive image"></a>
+			</div>
+		</div>
 
 
-    <p></p>
+		<p></p>
 
 
 <div class="input-group input-group-lg">
   <span class="input-group-addon">全能搜</span>
-  <form action="http://www.baidu.com/s" method="get" target="_blank">
+  <form action="" method="get" target="_blank" id="form">
   <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，点击下方相应按钮，即可检索">
 </div>
-    <P><center>
+	  <P><center class="serWrap">
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
@@ -103,168 +103,18 @@ height: 100%;
   <!--  <input type="submit" value="各种网盘" id="wangpan" button type="button" class="btn btn-primary"/>-->
   </center></P>
 
-                           <!--<center>
+												   <!--<center>
     <a href="http://byr.wiki/new/">新版导航</a>
   </center>-->
 
 
-  </form>
-  </div>
-  <script>
-    var sAddress=document.getElementsByTagName("form")[0];
-    var sInfor=document.getElementById("search");
-    var sBaidu=document.getElementById("baidu");
-    var sGoogle=document.getElementById("google");
-    var sGoogle1=document.getElementById("google1");
-    var sjd=document.getElementById("jd");
-    var stianmao=document.getElementById("tianmao");
-    var staobao=document.getElementById("taobao");
-    var sWeixin=document.getElementById("weixin");
-    var sZhihu=document.getElementById("zhihu");
-    var sweibo=document.getElementById("weibo");
-    var sdouban=document.getElementById("douban");
-    var sgequ=document.getElementById("gequ");
-
-      var sWeixin3=document.getElementById("weixin3");
-       var stieba=document.getElementById("tieba");
-     var sgithub=document.getElementById("github");
-     var swangpan=document.getElementById("wangpan");
-
-    //百度
-    sBaidu.onclick=function(){
-      sAddress.action="http://www.baidu.com/s";
-      sInfor.name="wd";
-    }
-    //Google
-    sGoogle.onclick=function(){
-      sAddress.action="http://www.google.com/search";
-      sInfor.name="q";
-    };
-    //Google镜像
-    sGoogle1.onclick=function(){
-      sAddress.action="https://letsgg.tk/search?";
-      sInfor.name="q";
-    };
-
-    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
-    // sjd.onclick=function(){
-    //   // sAddress.action="http://search.jd.com/Search?enc=utf-8&";
-    //   // sInfor.name="keyword";
-    //   // sInfor.type="enc=utf-8";
-    //   var query = sInfor.value;
-    //   if ( query ) {
-    //   window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-    //   return false;
-    // };
-    // }
-    $('#jd').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-        return false;
-      };
-    });
+	</form>
+	</div>
+	
+	<center>
 
 
-    //天猫
-    stianmao.onclick=function(){
-      sAddress.action="https://list.tmall.com/search_product.htm?";
-      sInfor.name="q";
-      //sInfor.type="enc=utf-8";
-    }
-    //淘宝
-    staobao.onclick=function(){
-      sAddress.action="https://s.taobao.com/search?";
-      sInfor.name="q";
-    }
-//    //微信  检索需求较小，已下架
-//    sWeixin.onclick=function(){
-//      sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
-//
-//      sInfor.name="query";
-//
-//    }
-
-
-    //知乎
-    sZhihu.onclick=function(){
-      sAddress.action="https://www.zhihu.com/search";
-      sInfor.name="q";
-      sInfor.type="question";
-    }
-//    //微博 （检索异常）
-//    sweibo.onclick=function(){
-//      sAddress.action="http://s.weibo.com/weibo/?";
-//      //sInfor.name="q";
-//      //sInfor.type="question";
-//    }
-    $('#weibo').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://s.weibo.com/weibo/" + query, "_blank");
-        return false;
-      };
-    });
-
-    //豆瓣
-    sdouban.onclick=function(){
-      sAddress.action="https://www.douban.com/search?";
-      sInfor.name="q";
-      //sInfor.type="question";
-    }
-    //hao123 音乐
-    sgequ.onclick=function(){
-      sAddress.action="http://music.hao123.com/search?";
-      sInfor.name="key";
-      //sInfor.type="1";
-    }
-
-    // 胖次
-    $('#panci').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
-        return false;
-      };
-    });
-
-    //论坛内容
-    sWeixin3.onclick=function(){
-      sAddress.action="http://search.icybee.cn/bbs/";
-      sInfor.name="key";
-    }
-
-//    //北京邮电大学贴吧 （引用的京东搜索代码，在移动端出现相同的访问异常）
-//    stieba.onclick=function(){
-//      var query = sInfor.value;
-//    if ( query ) {
-//      window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
-//    };
-//    }
-//
-
-      //github
-    sgithub.onclick=function(){
-      sAddress.action="https://github.com/search?";
-      //sInfor.type="author";
-      sInfor.name="q";
-    }
-
-      //胖次网，网盘资源检索
-    //swangpan.onclick=function(){
-      //sAddress.action="http://www.panc.cc/s";
-      //sInfor.type="author";
-      //sInfor.name="q";
-    //}
-
-
-
-
-  </script>
-  <center>
-
-
-    <p>随时随地 Byr.wiki  记住一个就够! </p>
+		<p>随时随地 Byr.wiki  记住一个就够!	</p>
 
     </center>
 
@@ -471,7 +321,7 @@ height: 100%;
 <div id="jnkc">
 </div>
 <script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
-    </script>
+		</script>
 <table>
 <thead>
 <tr>
@@ -513,5 +363,222 @@ var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " 
   ga('create', 'UA-72788532-6', 'auto');
   ga('send', 'pageview');
 </script>
+<script>
+		let serWrap=[
+			{
+				action:"http://www.baidu.com/s",
+				name:"wd",
+				newAction:"http:/www.baidu.com"
+			},
+			{
+				action:"http://www.google.com/search",
+				name:"q",
+				newAction:"http://www.google.com"
+			},
+			{
+				action:"http://www.acgn.ren/search?newwindow=1&safe=strict&noj=1&site=webhp&source=hp&q=",
+				name:"q",
+				newAction:"http://www.acgn.ren"
+			},
+			{
+				action:"http://search.jd.com/Search?enc=utf-8&",
+				name:"q",
+				newAction:"http://www.jd.com",
+				type:"enc=utf-8"
+			},
+			{
+				action:"https://list.tmall.com/search_product.htm?",
+				name:"q",
+				newAction:"http://www.tmall.com",
+				type:"enc=utf-8"
+			},
+			{
+				action:"https://s.taobao.com/search?",
+				name:"q",
+				newAction:"http://www.taobao.com"
+			},
+			{
+				action:"https://www.zhihu.com/search",
+				name:"q",
+				newAction:"http://www.zhihu.com",
+				type:"question"
+			},
+			{
+				action:"http://s.weibo.com/weibo/?",
+				name:"q",
+				newAction:"http:/www.weibo.com",
+				type:"question"
+			},
+			{
+				action:"https://www.douban.com/search?",
+				name:"q",
+				newAction:"http://www.douban.com",
+				type:"question"
+			},
+			{
+				actiion:"http://music.hao123.com/search?",
+				name:"key",
+				newAction:"http://music.hao123.com",
+				type:1
+			},
+			{
+				action:"http://www.panc.cc/s",
+				name:"q",
+				newAction:"http://www.panc.cc",
+				type:"author"
+			},
+			{
+				action:"http://search.icybee.cn/bbs/",
+				name:"key",
+				newAction:"https://bbs.byr.cn/"
+			},
+			{
+				action:"https://www.github.com/search?",
+				name:"q",
+				newAction:"https://www.github.com",
+				type:"author"
+			}
+		]
+		function serchAuto(index,action,name,newAction,type){
+			type=type||"";
+			name=name||"";
+			if($("#search").val()==""){
+				$("#form").attr("action",newAction);
+				$("#search").attr("name",'');
+				$("#search").attr("type",'');
+			}else if(index==3){
+				window.open("http://search.jd.com/Search?+enc=utf-8&keyword=" + $("#search").val(), "_blank");
+				return false;
+			}else if(index==7){
+				 window.open("http://s.weibo.com/weibo/" + $("#search").val(), "_blank");
+			}else{
+				$("#form").attr("action",action);
+				$("#search").attr("name",name);
+				$("#search").attr("type",type);
+			}
+		};
+		
+		$(".serWrap input[type=submit]").each(function(){
+			$(this).click(function(){
+				var order=$(this).index();
+				var tagAction=serWrap[order].action;
+				var tagName=serWrap[order].name;
+				var tagNewAction=serWrap[order].newAction;
+				var tagType=serWrap[order].type;
+				serchAuto(order,tagAction,tagName,tagNewAction,tagType)
+			})
+		})
+		
+		
+
+    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+    // sjd.onclick=function(){
+    //   // sAddress.action=
+    //   // sInfor.name="keyword";
+    //   // sInfor.type="";
+    //   var query = sInfor.value;
+    //   if ( query ) {
+    //   window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+    //   return false;
+    // };
+    // }
+    
+//  $('#jd').click(function() {
+//    var query = $('#search').val();
+//    if ( query ) {
+//      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+//      return false;
+//    };
+//  });
+
+		//淘宝
+//		staobao.onclick=function(){
+//			sAddress.action="";
+//			sInfor.name="q";
+//		}
+//		//微信  检索需求较小，已下架
+//		sWeixin.onclick=function(){
+//			sAddress.action="http://weixin.sogou.com/weixin?ie=utf8&";
+//
+//			sInfor.name="query";
+//
+//		}
+
+
+		//知乎
+//		sZhihu.onclick=function(){
+//			sAddress.action="https://www.zhihu.com/search";
+//			sInfor.name="q";
+//			sInfor.type="question";
+//		}
+//		//微博 （检索异常）
+//		sweibo.onclick=function(){
+//			sAddress.action="http://s.weibo.com/weibo/?";
+//			//sInfor.name="q";
+//			//sInfor.type="question";
+//		}
+//  $('#weibo').click(function() {
+//    var query = $('#search').val();
+//    if ( query ) {
+//      window.open("http://s.weibo.com/weibo/" + query, "_blank");
+//      return false;
+//    };
+//  });
+
+		//豆瓣
+//		sdouban.onclick=function(){
+//			sAddress.action="https://www.douban.com/search?";
+//			sInfor.name="q";
+//			//sInfor.type="question";
+//		}
+		//hao123 音乐
+//		sgequ.onclick=function(){
+//			sAddress.action="http://music.hao123.com/search?";
+//			sInfor.name="key";
+//			//sInfor.type="1";
+//		}
+
+    // 胖次
+//  $('#panci').click(function() {
+//    var query = $('#search').val();
+//    if ( query ) {
+//      window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
+//      return false;
+//    };
+//  });
+
+		//论坛内容
+//		sWeixin3.onclick=function(){
+//			sAddress.action="http://search.icybee.cn/bbs/";
+//			sInfor.name="key";
+//		}
+
+//		//北京邮电大学贴吧 （引用的京东搜索代码，在移动端出现相同的访问异常）
+//		stieba.onclick=function(){
+//			var query = sInfor.value;
+//    if ( query ) {
+//      window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
+//    };
+//		}
+//
+
+			//github
+//		sgithub.onclick=function(){
+//			sAddress.action="https://github.com/search?";
+//			//sInfor.type="author";
+//			sInfor.name="q";
+//		}
+
+			//胖次网，网盘资源检索
+		//swangpan.onclick=function(){
+			//sAddress.action="http://www.panc.cc/s";
+			//sInfor.type="author";
+			//sInfor.name="q";
+		//}
+
+
+
+
+	</script>
 </body>
 </html>
