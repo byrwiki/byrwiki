@@ -1,163 +1,66 @@
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
+*{margin:0;padding:0}  
+ a{color:#fff;  
+ margin-top:10px;  
+ display:block;  
+ margin-left:18%;  
+ font-size:13px;  
+ position:absolute;  
+ }  
+ body{background:url(images/bg0.jpg);}  
+ .con{width:911px;  
+   height:317px;  
+   margin:50px auto;}  
+ .head{width:100%;  
+   height:0px;  
+   background:#fff;  
+   position:fixed;  
+   left:0px;  
+   top:0px;  
+   border-bottom:1px solid #e3e3e3;  
+   overflow:hidden;  
+   }  
+ .title{width:911px;  
+   height:45px;  
+   margin:0px auto;}    
+ .heitiao{width:100%;  
+    height:35px;  
+    background:rgba(0,0,0,0.7);  
+    }  
+ .menu{width:100%;  
+   height:45px;  
+   border-bottom:1px solid #e3e3e3;}  
+ .p1{width:861px;  
+  height:45px;  
+  background:url(images/p1.png);  
+  float:left;  
+  cursor:pointer;}  
+ .p2{width:50px;  
+  height:45px;  
+  background:url(images/sp.png);  
+  float:right;  
+  cursor:pointer;  
+  }  
+ .bg{width:911px;  
+  height:205px;  
+  margin:25px auto;}  
+ .bgcon{width:590px;  
+   height:190px;  
+   float:left;  
+   }  
+ .bgcon img{width:97px;  
+    height:59px;  
+    display:block;  
+    float:left;  
+    margin-right:1px;  
+    margin-bottom:1px;  
+    }  
+ .bgcon .big{width:195px;  
+    height:119px;}  
+ .bgcon .last{position:relative;  
+     top:-60px;  
+     }  
+ .bgyl{width:264px;  
+   height:180px;  
+   float:right;  
+   background:url(images/bg1s.jpg);  
+   background-size:294px;}  
