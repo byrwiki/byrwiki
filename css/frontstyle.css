@@ -28,8 +28,8 @@ font-size: 20px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 25px;
-	background: rgba(88, 134, 183, 0.83);
+    height: 30px;
+    background: rgba(50, 113, 179, 0.17);
 
 }
 
@@ -39,9 +39,9 @@ font-size: 20px;
 	background: transparent;
 	font-size: 15px;
 	font-weight: bold;
-	line-height: 25px;
+	line-height: 32px;
 	margin: 0 10px 0 10px;
-	color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 
@@ -56,8 +56,12 @@ font-size: 20px;
 
 #zb{
 	float: left;
+	
+
+
 }
 
+.a.LOGO1:hover {background: url(../images/logo8.png);}
 
 
 .yb{
@@ -211,3 +215,5 @@ font-size: 20px;
 	line-height: normal;
 	
 }
+
+
