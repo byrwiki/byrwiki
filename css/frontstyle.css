@@ -33,6 +33,21 @@ font-size: 20px;
 
 }
 
+#header2{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 30px;
+    background: rgba(50, 113, 179, 0.78);
+
+}
+
+.yb{
+	float: right;
+}
+
 #header a{
 	font-family: 'Microsoft Yahei', sans-serif;
 	text-decoration: none;
@@ -44,6 +59,16 @@ font-size: 20px;
 	color: rgba(255, 255, 255, 0.75);
 }
 
+#header2 a{
+	font-family: 'Microsoft Yahei', sans-serif;
+	text-decoration: none;
+	background: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 32px;
+	margin: 0 10px 0 10px;
+	color: rgba(255, 255, 255, 0.75);
+	}
 
 #zhongjian{
 	font-size: 15px;
@@ -57,16 +82,8 @@ font-size: 20px;
 #zb{
 	float: left;
 	
-
-
 }
 
-.a.LOGO1:hover {background: url(../images/logo8.png);}
-
-
-.yb{
-	float: right;
-}
 
 #LOGO{
 	position: relative;
@@ -217,3 +234,12 @@ font-size: 20px;
 }
 
 
+.zw{
+	text-align: center;
+	position: auto;
+	color: black;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: normal;
+	
+}
