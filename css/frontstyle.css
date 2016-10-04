@@ -30,7 +30,8 @@ font-size: 20px;
 	left: 0;
 	width: 100%;
     height: 30px;
-    background: rgba(50, 113, 179, 0.17);
+    background: rgba(21, 24, 27, 0.32);
+   /* background: rgba(50, 113, 179, 0.17);*/
 
 }
 
@@ -136,7 +137,7 @@ font-size: 20px;
 	left: 0;
 	width: 100%;
 	height: 60px;
-	background: rgba(88, 134, 183, 0.83);
+	background: rgba(21, 24, 27, 0.32)
 }
 
 @media (min-width: 300px){
