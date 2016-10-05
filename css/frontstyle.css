@@ -137,7 +137,19 @@ font-size: 20px;
 	left: 0;
 	width: 100%;
 	height: 60px;
-	background: rgba(21, 24, 27, 0.32)
+	background: rgba(21, 24, 27, 0.32);
+}
+
+
+#footer1 {
+    position: page;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	visibility: hidden;
+	background: rgba(44, 86, 127, 0.67);
 }
 
 @media (min-width: 300px){
@@ -200,7 +212,7 @@ font-size: 20px;
 	position: auto;
 	color: black;
 	font-size: 16px;
-	font-family: "微软雅黑";
+/*	font-family: "微软雅黑";*/
 	
 	
 }
@@ -239,7 +251,7 @@ font-size: 20px;
 .zw{
 	text-align: center;
 	position: auto;
-	color: black;
+	color: white;
 	font-size: 16px;
 	font-family: "微软雅黑";
 	line-height: normal;
