@@ -247,6 +247,17 @@ font-size: 20px;
 	
 }
 
+#fenlei1{
+	text-align: center;
+	position: auto;
+	color: red;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: normal;
+	
+}
+
 
 .zw{
 	text-align: center;
