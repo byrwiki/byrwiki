@@ -1027,14 +1027,14 @@ html {
 	-webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 body {
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:"微软雅黑",Helvetica,Arial,sans-serif;
 	font-size:14px;
 	line-height:1.42857143;
 	color:#333;
 	background-color:#fff
 }
 button,input,select,textarea {
-	font-family:inherit;
+	font-family:"微软雅黑";
 	font-size:inherit;
 	line-height:inherit
 }
@@ -2620,7 +2620,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 	border: 1px solid transparent;
 	white-space: nowrap;
 	padding: 6px 12px;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.45;
 	border-radius: 8px;
 	-webkit-user-select: none;
@@ -3154,7 +3154,7 @@ tbody.collapse.in {
 .input-group-lg>.form-control,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.btn {
 	height: 43px;
     padding: 7px 16px;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.33;
     border-radius: 6px;
 }

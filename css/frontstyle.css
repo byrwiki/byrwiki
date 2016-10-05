@@ -58,7 +58,7 @@ font-size: 20px;
 	font-weight: bold;
 	line-height: 32px;
 	margin: 0 10px 0 10px;
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.93);
 }
 
 #header2 a{
@@ -74,7 +74,6 @@ font-size: 20px;
 
 #zhongjian{
 	font-size: 15px;
-	font-weight: bold;
 	color: #FFFFFF;
 
 	
@@ -197,8 +196,9 @@ font-size: 20px;
 .center{
 	text-align: center;
 	position: auto;
-	font-size: 17px;
+	font-size: 16px;
 	font-family: "微软雅黑";
+	color: #333;
 	
 	
 }
@@ -210,8 +210,8 @@ font-size: 20px;
 #zuoce{
 	text-align: center;
 	position: auto;
-	color: black;
-	font-size: 16px;
+    color: #333;
+    font-size: 16px;
 /*	font-family: "微软雅黑";*/
 	
 	
@@ -240,7 +240,7 @@ font-size: 20px;
 #fenlei{
 	text-align: center;
 	position: auto;
-	color: black;
+	color: #333;
 	font-size: 16px;
 	font-family: "微软雅黑";
 	line-height: normal;
