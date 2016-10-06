@@ -8,7 +8,7 @@ body,h1,a{
 
 #bg{
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 	background: url('./images/1.jpg')；
 	background-size: cover;
 	height: 100%;

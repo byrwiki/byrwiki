@@ -105,6 +105,8 @@ width: 100%;
   <form action="http://www.baidu.com/s" method="get" target="_blank">
   <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，点击下方相应按钮，即可检索">
 </div>
+
+
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
@@ -143,10 +145,10 @@ width: 100%;
     var sweibo=document.getElementById("weibo");
     var sdouban=document.getElementById("douban");
     var sgequ=document.getElementById("gequ");
-      var sWeixin3=document.getElementById("weixin3");
-       var stieba=document.getElementById("tieba");
-     var sgithub=document.getElementById("github");
-     var swangpan=document.getElementById("wangpan");
+    var sWeixin3=document.getElementById("weixin3");
+    var stieba=document.getElementById("tieba");
+    var sgithub=document.getElementById("github");
+    var swangpan=document.getElementById("wangpan");
 
     //百度
     sBaidu.onclick=function(){
@@ -165,6 +167,15 @@ width: 100%;
     };
 
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+    $('#jd').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+        return false;
+      };
+    });
+    
+    
     // sjd.onclick=function(){
     //   // sAddress.action="http://search.jd.com/Search?enc=utf-8&";
     //   // sInfor.name="keyword";
@@ -175,14 +186,20 @@ width: 100%;
     //   return false;
     // };
     // }
-    $('#jd').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-        return false;
-      };
-    });
-
+    
+    // 10 月 6 日晚李伟测试
+//  $('#jd').click(function() {
+//  var query = $('#search').val();
+//  
+//    if (!!query) {
+//    	console.log("有输入内容")
+//      window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+//      return false;
+//    }else if(!query ||query==" "){
+//    	console.log("有输入内容或者为空格")
+//    	window.open("http://jd.com","_blank")
+//    }
+//});
 
     //天猫  搜索需求下下架
 //  stianmao.onclick=function(){
@@ -203,6 +220,7 @@ width: 100%;
       if ( query ) {
         window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
         return false;
+      
       };
     });
 
@@ -225,6 +243,7 @@ width: 100%;
       if ( query ) {
         window.open("http://s.weibo.com/weibo/" + query, "_blank");
         return false;
+      
       };
     });
 
@@ -250,11 +269,12 @@ width: 100%;
       if ( query ) {
         window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
         return false;
-      };
+      
+     	};
     });
 
             
-    
+  
 
     // 胖次
     $('#panci').click(function() {
@@ -262,10 +282,12 @@ width: 100%;
       if ( query ) {
         window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
         return false;
-      };
+      
+     	};
     });
 
     //论坛内容
+              
     sWeixin3.onclick=function(){
       sAddress.action="http://search.icybee.cn/bbs/";
       sInfor.name="key";
@@ -562,6 +584,7 @@ width: 100%;
        <td align="center"><a href="http://so.byr.wiki/" target="_blank"id="lianjie">全能搜索</a></td>
       <td align="center"><a href="http://720yun.com/t/e1f2exb8ayi" target="_blank"id="lianjie">全景北邮</a></td>
       <td align="center"><a href="https://zhuanlan.zhihu.com/p/22728795" target="_blank"id="lianjie">网站特色</a></td>
+       <td align="center"><a href="https://github.com/byrwiki/byrwiki.github.io/wiki/%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9" target="_blank"id="lianjie">使用帮助</a></td>
         
   
  
@@ -598,12 +621,7 @@ width: 100%;
       
   	</div>
   	
-  	<!--
-      	作者：i@zhangxingqiu.cn
-      	时间：2016-10-03
-      	描述：CNZZ 统计代码
-      -->
-  	  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260446707'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260446707%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+  	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260446707'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260446707%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
       </script>
   	
   	
