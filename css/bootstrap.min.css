@@ -2252,7 +2252,7 @@ output {
 .form-control {
 		display: block;
 	width: 100%;
-	height: 42px;
+	height: 43px;
 	padding: 6px 12px;
 	font-size: 15px;
 	line-height: 1.45;
@@ -2622,7 +2622,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 	padding: 6px 12px;
 	font-size: 16px;
 	line-height: 1.45;
-	border-radius: 8px;
+	border-radius: 0px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -3156,7 +3156,7 @@ tbody.collapse.in {
     padding: 7px 16px;
     font-size: 20px;
     line-height: 1.33;
-    border-radius: 6px;
+    border-radius: 0px;
 }
 select.input-group-lg>.form-control,select.input-group-lg>.input-group-addon,select.input-group-lg>.input-group-btn>.btn {
 	height:46px;
@@ -3195,7 +3195,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 	font-size:14px;
 	font-weight:400;
 	line-height:1;
-	color:#555;
+	color:#fff;
 	text-align:center;
 	background-color:#eee;
 	border:1px solid #ccc;

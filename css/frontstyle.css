@@ -6,6 +6,13 @@ body,h1,a{
 }
 
 
+.form-control.yc {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius:6px;
+	border-bottom-right-radius: 6px;
+}
+
 #bg{
 	position: absolute;
 	z-index: 1;
