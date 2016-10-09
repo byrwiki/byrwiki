@@ -205,7 +205,7 @@ font-size: 20px;
 	position: auto;
 	font-size: 16px;
 	font-family: "微软雅黑";
-	color: #333;
+	color: rgba(146, 191, 226, 1);
 	
 	
 }
@@ -217,17 +217,23 @@ font-size: 20px;
 #zuoce{
 	text-align: center;
 	position: auto;
-    color: #333;
+    color: rgba(146, 191, 226, 1);
     font-size: 16px;
 /*	font-family: "微软雅黑";*/
 	
 	
 }
 
+.bgm {
+	background: rgba(45, 43, 43, 0.43);
+}
+
+
+
 #lianjie1{
 	text-align: center;
 	position: auto;
-	color:red;
+	color:#f60;
 	font-weight: bold;
 	font-size: 15px;
 	font-family: "微软雅黑";
@@ -237,7 +243,7 @@ font-size: 20px;
 #lianjie {
 	text-align: center;
 	position: auto;
-	color: dodgerblue;
+	color: #f7f6f3;
 	font-size: 15px;
 	font-family: "微软雅黑";
 	
@@ -247,9 +253,10 @@ font-size: 20px;
 #fenlei{
 	text-align: center;
 	position: auto;
-	color: #333;
+	color: rgba(146, 191, 226, 1);
 	font-size: 16px;
 	font-family: "微软雅黑";
+	font-weight: bold;
 	line-height: normal;
 	
 }
@@ -257,7 +264,7 @@ font-size: 20px;
 #fenlei1{
 	text-align: center;
 	position: auto;
-	color: red;
+	color: #f60;
 	font-weight: bold;
 	font-size: 16px;
 	font-family: "微软雅黑";
