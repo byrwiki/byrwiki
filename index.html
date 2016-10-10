@@ -100,39 +100,207 @@ width: 100%;
     <p></p>
 
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-addon">全能搜</span>
-    <form action="http://www.baidu.com/s" method="get" target="_blank">
-    <input type="text" class="form-control " name="search" id="search" placeholder="输入关键词，点击下方相应按钮，即可检索" >
-  
-  </div>
 
-
-  <P><center>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon">全能搜</span>
+  <form action="http://www.baidu.com/s" method="get" target="_blank">
+  <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，点击下方相应按钮，即可检索">
+</div>
+    <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
+    
     <!--<input type="submit" value="天猫" id="tianmao" button type="button" class="btn btn-primary" />-->
+    
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
-    <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
+   <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
     <input type="submit" value="Byr 论坛" id="weixin3" button type="button" class="btn btn-primary"/>
-    <!-- <input type="submit" value="北邮贴吧" id="tieba" button type="button" class="btn btn-primary"/>-->
+   <!-- <input type="submit" value="北邮贴吧" id="tieba" button type="button" class="btn btn-primary"/>-->
 
-    <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary" />
-    <!--  <input type="submit" value="各种网盘" id="wangpan" button type="button" class="btn btn-primary"/>-->
+    <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
+  <!--  <input type="submit" value="网盘" id="wangpan" button type="button" class="btn btn-primary"/>-->
   </center></P>
 
+                           <!--<center>
+    <a href="http://byr.wiki/new/">新版导航</a>
+  </center>-->
 
 
   </form>
   </div>
+  <script>
+    var sAddress=document.getElementsByTagName("form")[0];
+    var sInfor=document.getElementById("search");
+    var sBaidu=document.getElementById("baidu");
+    var sGoogle=document.getElementById("google");
+    var sGoogle1=document.getElementById("google1");
+    var sjd=document.getElementById("jd");
+    var stianmao=document.getElementById("tianmao");
+    var staobao=document.getElementById("taobao");
+    var sWeixin=document.getElementById("weixin");
+    var sZhihu=document.getElementById("zhihu");
+    var sweibo=document.getElementById("weibo");
+    var sdouban=document.getElementById("douban");
+    var sgequ=document.getElementById("gequ");
+
+      var sWeixin3=document.getElementById("weixin3");
+       var stieba=document.getElementById("tieba");
+     var sgithub=document.getElementById("github");
+     var swangpan=document.getElementById("wangpan");
+
+    //百度
+    sBaidu.onclick=function(){
+      sAddress.action="http://www.baidu.com/s";
+      sInfor.name="wd";
+    }
+    //Google
+    sGoogle.onclick=function(){
+      sAddress.action="http://www.google.com/search";
+      sInfor.name="q";
+    };
+    //Google镜像
+    sGoogle1.onclick=function(){
+      sAddress.action="https://letsgg.tk/search?";
+      sInfor.name="q";
+    };
+
+    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+   
+    $('#jd').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+        return false;
+      };
+    });
+
+
+    //天猫  搜索需求下 暂时下架
+//  stianmao.onclick=function(){
+//    sAddress.action="https://list.tmall.com/search_product.htm?";
+//    sInfor.name="q";
+//    //sInfor.type="enc=utf-8";
+//  }
+    
+    //淘宝
+    staobao.onclick=function(){
+      sAddress.action="https://s.taobao.com/search?";
+      sInfor.name="q";
+    }
+    
+      //微信  恢复上线
+     $('#weixin').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
+        return false;
+      
+      };
+    });
+
+    //知乎
+    sZhihu.onclick=function(){
+      sAddress.action="https://www.zhihu.com/search";
+      sInfor.name="q";
+      sInfor.type="question";
+    }
+//    //微博 （检索异常）
+//    sweibo.onclick=function(){
+//      sAddress.action="http://s.weibo.com/weibo/?";
+//      //sInfor.name="q";
+//      //sInfor.type="question";
+//    }
+    $('#weibo').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://s.weibo.com/weibo/" + query, "_blank");
+        return false;
+      };
+    });
+
+    //豆瓣
+    sdouban.onclick=function(){
+      sAddress.action="https://www.douban.com/search?";
+      sInfor.name="q";
+      //sInfor.type="question";
+    }
+    //hao123 音乐
+//   sgequ.onclick=function(){
+//    sAddress.action="http://music.hao123.com/search?";
+//    sInfor.name="key";
+//    sInfor.type="1";
+//  }
+    
+    
+     //改用网易云音乐检索
+     
+    $('#gequ').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+        return false;
+      
+     	};
+    });
+    
   
+
+// 胖次  另一个检索入口
+
+ $('#panci').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://218.50.4.4/s/" + query + "/td_0", "_blank");
+        return false;
+      
+     	};
+    });
+
+    //论坛内容
+    sWeixin3.onclick=function(){
+      sAddress.action="http://search.icybee.cn/bbs/";
+      sInfor.name="key";
+    }
+
+//    //北京邮电大学贴吧 （引用的京东搜索代码，在移动端出现相同的访问异常）
+//    stieba.onclick=function(){
+//      var query = sInfor.value;
+//    if ( query ) {
+//      window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
+//    };
+//    }
+//
+
+      //github
+    sgithub.onclick=function(){
+      sAddress.action="https://github.com/search?";
+      //sInfor.type="author";
+      sInfor.name="q";
+    }
+
+      //胖次网，网盘资源检索
+    //swangpan.onclick=function(){
+      //sAddress.action="http://www.panc.cc/s";
+      //sInfor.type="author";
+      //sInfor.name="q";
+    //}
+
+
+
+
+  </script>
+
+ 
+
+
+
 
 <!--
 	作者：i@zhangxingqiu.cn
@@ -428,7 +596,8 @@ width: 100%;
  	描述：搜索的 js 代码
  -->
  
- <script>
+ 
+  <!--<script>
     var sAddress=document.getElementsByTagName("form")[0];
     var sInfor=document.getElementById("search");
     var sBaidu=document.getElementById("baidu");
@@ -442,30 +611,30 @@ width: 100%;
     var sweibo=document.getElementById("weibo");
     var sdouban=document.getElementById("douban");
     var sgequ=document.getElementById("gequ");
-    var sWeixin3=document.getElementById("weixin3");
-    var stieba=document.getElementById("tieba");
-    var sgithub=document.getElementById("github");
-    var swangpan=document.getElementById("wangpan");
+
+      var sWeixin3=document.getElementById("weixin3");
+       var stieba=document.getElementById("tieba");
+     var sgithub=document.getElementById("github");
+     var swangpan=document.getElementById("wangpan");
 
     //百度
     sBaidu.onclick=function(){
       sAddress.action="http://www.baidu.com/s";
       sInfor.name="wd";
     }
-
     //Google
     sGoogle.onclick=function(){
       sAddress.action="http://www.google.com/search";
       sInfor.name="q";
     };
-
     //Google镜像
     sGoogle1.onclick=function(){
-      sAddress.action="http://www.acgn.ren/search?q=";
+      sAddress.action="https://letsgg.tk/search?";
       sInfor.name="q";
     };
 
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+   
     $('#jd').click(function() {
       var query = $('#search').val();
       if ( query ) {
@@ -473,24 +642,30 @@ width: 100%;
         return false;
       };
     });
+
+
+    //天猫  搜索需求下 暂时下架
+//  stianmao.onclick=function(){
+//    sAddress.action="https://list.tmall.com/search_product.htm?";
+//    sInfor.name="q";
+//    //sInfor.type="enc=utf-8";
+//  }
     
-      
     //淘宝
     staobao.onclick=function(){
       sAddress.action="https://s.taobao.com/search?";
       sInfor.name="q";
     }
-
-      //微信公众号文章
-    $('#weixin').click(function() {
+    
+      //微信  恢复上线
+     $('#weixin').click(function() {
       var query = $('#search').val();
       if ( query ) {
         window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
         return false;
+      
       };
     });
-
-          
 
     //知乎
     sZhihu.onclick=function(){
@@ -498,15 +673,17 @@ width: 100%;
       sInfor.name="q";
       sInfor.type="question";
     }
-
-   //微博 
-    
+//    //微博 （检索异常）
+//    sweibo.onclick=function(){
+//      sAddress.action="http://s.weibo.com/weibo/?";
+//      //sInfor.name="q";
+//      //sInfor.type="question";
+//    }
     $('#weibo').click(function() {
       var query = $('#search').val();
       if ( query ) {
         window.open("http://s.weibo.com/weibo/" + query, "_blank");
         return false;
-      
       };
     });
 
@@ -516,18 +693,17 @@ width: 100%;
       sInfor.name="q";
       //sInfor.type="question";
     }
-    
-    
-//  //hao123 音乐 下线
-//  sgequ.onclick=function(){
+    //hao123 音乐
+//   sgequ.onclick=function(){
 //    sAddress.action="http://music.hao123.com/search?";
 //    sInfor.name="key";
-//   
+//    sInfor.type="1";
 //  }
-//  
-    //网易云音乐
-       
-      $('#gequ').click(function() {
+    
+    
+     //改用网易云音乐检索
+     
+    $('#gequ').click(function() {
       var query = $('#search').val();
       if ( query ) {
         window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
@@ -535,22 +711,12 @@ width: 100%;
       
      	};
     });
-
-            
+    
   
 
-    // 胖次
-//  $('#panci').click(function() {
-//    var query = $('#search').val();
-//    if ( query ) {
-//      window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
-//      return false;
-//    
-//   	};
-//  });
+// 胖次  另一个检索入口
 
-  // 胖次 另一个访问地址 
-    $('#panci').click(function() {
+ $('#panci').click(function() {
       var query = $('#search').val();
       if ( query ) {
         window.open("http://218.50.4.4/s/" + query + "/td_0", "_blank");
@@ -559,10 +725,7 @@ width: 100%;
      	};
     });
 
-
-
     //论坛内容
-              
     sWeixin3.onclick=function(){
       sAddress.action="http://search.icybee.cn/bbs/";
       sInfor.name="key";
@@ -584,10 +747,19 @@ width: 100%;
       sInfor.name="q";
     }
 
-     
+      //胖次网，网盘资源检索
+    //swangpan.onclick=function(){
+      //sAddress.action="http://www.panc.cc/s";
+      //sInfor.type="author";
+      //sInfor.name="q";
+    //}
 
 
-  </script>
+
+
+  </script>-->
+
+
  
  
  
