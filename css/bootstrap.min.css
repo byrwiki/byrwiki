@@ -3196,7 +3196,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 	font-size:14px;
 	font-weight:400;
 	line-height:1;
-	color:#fff;
+	color:#333;
 	text-align:center;
 	background-color:#eee;
 	border:1px solid #ccc;
@@ -4105,8 +4105,8 @@ a.badge:focus,a.badge:hover {
 	color:inherit
 }
 .jumbotron p {
-	margin-bottom:15px;
-	font-size:21px;
+	margin-bottom:10px;
+	font-size:16px;
 	font-weight:200
 }
 .jumbotron>hr {
