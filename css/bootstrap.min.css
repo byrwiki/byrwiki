@@ -2622,7 +2622,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 	white-space: nowrap;
 	padding: 6px 12px;
 	font-size: 16px;
-	line-height: 1.45;
+	line-height: 1.15;
 	border-radius: 0px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -2676,12 +2676,12 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 }
 .btn-primary {
 	color: #F4F4F4;
-	background-color: #7AADE2;
+	background-color: rgba(122, 173, 226, 0.55);
 	border-color: rgba(0,128,255,0.05)
 }
 .btn-primary.active,.btn-primary.focus,.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.open>.dropdown-toggle.btn-primary {
 	color:#fff;
-	background-color:#4B0082;
+	background-color:rgba(0,0,0,.5);
 	border-color:#204d74
 }
 .btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary {
@@ -3156,7 +3156,7 @@ tbody.collapse.in {
 	height: 43px;
     padding: 7px 16px;
     font-size: 20px;
-    line-height: 1.33;
+    line-height: 1.20;
     border-radius: 0px;
 }
 select.input-group-lg>.form-control,select.input-group-lg>.input-group-addon,select.input-group-lg>.input-group-btn>.btn {
@@ -3196,10 +3196,11 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 	font-size:14px;
 	font-weight:400;
 	line-height:1;
-	color:#333;
+	color:rgba(255,255,255,.85);
+	font-weight: bold;
 	text-align:center;
 	background-color:#eee;
-	border:1px solid #ccc;
+	border:2px solid #ccc;
 	border-radius:4px
 }
 .input-group-addon.input-sm {
@@ -3221,7 +3222,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 }
 .input-group-addon:first-child {
 	border-right:0;
-	background-color: rgb(135, 185, 236);
+	background-color: rgba(122, 173, 226, 0.55);
 }
 .input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:first-child>.btn-group:not(:first-child)>.btn,.input-group-btn:first-child>.btn:not(:first-child),.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group>.btn,.input-group-btn:last-child>.dropdown-toggle {
 	border-top-left-radius:0;
