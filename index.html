@@ -112,7 +112,7 @@ width: 100%;
 <div class="input-group input-group-lg">
   <span class="input-group-addon">全能搜</span>
   <form action="http://www.baidu.com/s" method="get" target="_blank">
-  <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " value=" " >
+  <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " baiduSug="1"  value=" " >
 </div>
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
@@ -143,6 +143,10 @@ width: 100%;
 
   </form>
   </div>
+  
+  <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+  
+  
   <script>
     var sAddress=document.getElementsByTagName("form")[0];
     var sInfor=document.getElementById("search");
@@ -450,14 +454,16 @@ width: 100%;
       <td align="center"><a href="https://movie.douban.com/chart" target="_blank" id="lianjie">高分电影</a></td>
       <td align="center"><a href="http://www.panc.cc/" target="_blank" id="lianjie">胖次网盘</a></td>
       
-     <td align="center"><a href="http://mp.weixin.qq.com/s?__biz=MzAwMzA3ODgxNw==&mid=406233901&idx=1&sn=2eb9df6bf53792e601f84a0580ba49e1&chksm=0702ace3307525f506bd4b0adaff7dafe7cac2d20d3680756376bd23429329ca654c510d5263&mpshare=1&scene=1&srcid=1006WB7SXld0vX51b2d9Jg0X#wechat_redirect" target="_blank" id="lianjie">作者微信</a></td>
+    <!-- <td align="center"><a href="http://mp.weixin.qq.com/s?__biz=MzAwMzA3ODgxNw==&mid=406233901&idx=1&sn=2eb9df6bf53792e601f84a0580ba49e1&chksm=0702ace3307525f506bd4b0adaff7dafe7cac2d20d3680756376bd23429329ca654c510d5263&mpshare=1&scene=1&srcid=1006WB7SXld0vX51b2d9Jg0X#wechat_redirect" target="_blank" id="lianjie">作者微信</a></td>-->
+    <td> </td>
      
       <td align="center"><a href="http://music.163.com/#/playlist?id=3778678" target="_blank" id="lianjie">在线听歌</a></td>
       <td> </td>
       <td align="center"><a href="http://life.zhangxingqiu.cn/2016/01/16/%E7%BA%A2%E6%9D%8F%E5%87%BA%E5%A2%99/" target="_blank" id="lianjie1">科学上网</a></td>
+      <td align="center"><a href="http://youquhome.com/3820/" target="_blank" id="lianjie">在线游戏</a></td>
+      <td align="center"><a href="https://zhuanlan.zhihu.com/gongju666" target="_blank" id="lianjie">高效工具</a></td>
       <td> </td>
-      <td> </td>
-      <td> </td>
+  
   
 		</tr>
 	</tbody>
