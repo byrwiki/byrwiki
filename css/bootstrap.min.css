@@ -2250,11 +2250,11 @@ output {
 	color:#555
 }
 .form-control {
-		display: block;
+	display: block;
 	width: 100%;
 	height: 43px;
 	padding: 6px 12px;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.45;
 	color: #FFFFFF;
 	vertical-align: middle;
