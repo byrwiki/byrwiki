@@ -82,6 +82,8 @@ font-size: 20px;
 #zhongjian{
 	font-size: 15px;
 	color: #FFFFFF;
+	text-align: center;
+	font-family: "微软雅黑";
 
 	
 }
@@ -109,7 +111,7 @@ font-size: 20px;
 .sLOGO{
 	position: relative;
 	margin-left: 0;
-	margin-top: 45%;
+	margin-top: 15%;
 }
 
 
@@ -300,3 +302,5 @@ font-size: 20px;
 	line-height: normal;
 	
 }
+
+
