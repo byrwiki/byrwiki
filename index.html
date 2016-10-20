@@ -31,9 +31,9 @@ body  {
 	
 	/*作者：i@zhangxingqiu.cn
 	时间：2016-10-14
-	描述：这是猫咪背景照*/
+	描述：这里是星空背景照*/
 	
-background-image:url(http://byr.zhangxingqiu.cn/images/mao1.jpg);	
+background-image:url(http://byr.zhangxingqiu.cn/images/byrbg.jpg);	
 	
 	
 	/*作者：i@zhangxingqiu.cn
@@ -54,7 +54,7 @@ background-image:url(http://img.cdn.lwl12.com/images/2016/10/03/7d3167068eeb7438
 	时间：2016-10-05
 	描述：这是本地测试的背景照路径*/
 	
-/*background-image:url(images/mao1.jpg);*/
+/*background-image:url(images/12.jpg);*/
 
 z-index: -1;
 background-repeat:no-repeat;
@@ -98,12 +98,24 @@ width: 100%;
 
 <div class="container">
 
+  <div class="visible-xs">
+    <div class="row sLOGO">
+      <div class="col-xs-6 col-xs-offset-3">
+        <a href="./index.html"><img id="LOGO" src="./images/logo6.png"  alt="Responsive image"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden-xs"> 
     <div class="row LOGO">
       <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
         <a href="./index.html"><img id="LOGO" src="./images/logo.svg"  alt="Responsive image"></a>
       </div>
     </div>
-
+  </div>
+  
+  
+  
 
     <p></p>
 
@@ -113,6 +125,8 @@ width: 100%;
   <span class="input-group-addon">全能搜</span>
   <form action="http://www.baidu.com/s" method="get" target="_blank">
   <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " baiduSug="1"  value=" " >
+  
+  
 </div>
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
@@ -146,7 +160,7 @@ width: 100%;
   
   <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
   
-  
+   
   <script>
     var sAddress=document.getElementsByTagName("form")[0];
     var sInfor=document.getElementById("search");
@@ -603,180 +617,7 @@ width: 100%;
 
  <!--谷歌统计代码 -->
  
- 
- <!--
- 	作者：i@zhangxingqiu.cn
- 	时间：2016-10-08
- 	描述：搜索的 js 代码
- -->
- 
- 
-  <!--<script>
-    var sAddress=document.getElementsByTagName("form")[0];
-    var sInfor=document.getElementById("search");
-    var sBaidu=document.getElementById("baidu");
-    var sGoogle=document.getElementById("google");
-    var sGoogle1=document.getElementById("google1");
-    var sjd=document.getElementById("jd");
-    var stianmao=document.getElementById("tianmao");
-    var staobao=document.getElementById("taobao");
-    var sWeixin=document.getElementById("weixin");
-    var sZhihu=document.getElementById("zhihu");
-    var sweibo=document.getElementById("weibo");
-    var sdouban=document.getElementById("douban");
-    var sgequ=document.getElementById("gequ");
-
-      var sWeixin3=document.getElementById("weixin3");
-       var stieba=document.getElementById("tieba");
-     var sgithub=document.getElementById("github");
-     var swangpan=document.getElementById("wangpan");
-
-    //百度
-    sBaidu.onclick=function(){
-      sAddress.action="http://www.baidu.com/s";
-      sInfor.name="wd";
-    }
-    //Google
-    sGoogle.onclick=function(){
-      sAddress.action="http://www.google.com/search";
-      sInfor.name="q";
-    };
-    //Google镜像
-    sGoogle1.onclick=function(){
-      sAddress.action="https://letsgg.tk/search?";
-      sInfor.name="q";
-    };
-
-    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
-   
-    $('#jd').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-        return false;
-      };
-    });
-
-
-    //天猫  搜索需求下 暂时下架
-//  stianmao.onclick=function(){
-//    sAddress.action="https://list.tmall.com/search_product.htm?";
-//    sInfor.name="q";
-//    //sInfor.type="enc=utf-8";
-//  }
-    
-    //淘宝
-    staobao.onclick=function(){
-      sAddress.action="https://s.taobao.com/search?";
-      sInfor.name="q";
-    }
-    
-      //微信  恢复上线
-     $('#weixin').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
-        return false;
-      
-      };
-    });
-
-    //知乎
-    sZhihu.onclick=function(){
-      sAddress.action="https://www.zhihu.com/search";
-      sInfor.name="q";
-      sInfor.type="question";
-    }
-//    //微博 （检索异常）
-//    sweibo.onclick=function(){
-//      sAddress.action="http://s.weibo.com/weibo/?";
-//      //sInfor.name="q";
-//      //sInfor.type="question";
-//    }
-    $('#weibo').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://s.weibo.com/weibo/" + query, "_blank");
-        return false;
-      };
-    });
-
-    //豆瓣
-    sdouban.onclick=function(){
-      sAddress.action="https://www.douban.com/search?";
-      sInfor.name="q";
-      //sInfor.type="question";
-    }
-    //hao123 音乐
-//   sgequ.onclick=function(){
-//    sAddress.action="http://music.hao123.com/search?";
-//    sInfor.name="key";
-//    sInfor.type="1";
-//  }
-    
-    
-     //改用网易云音乐检索
-     
-    $('#gequ').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
-        return false;
-      
-     	};
-    });
-    
   
-
-// 胖次  另一个检索入口
-
- $('#panci').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://218.50.4.4/s/" + query + "/td_0", "_blank");
-        return false;
-      
-     	};
-    });
-
-    //论坛内容
-    sWeixin3.onclick=function(){
-      sAddress.action="http://search.icybee.cn/bbs/";
-      sInfor.name="key";
-    }
-
-//    //北京邮电大学贴吧 （引用的京东搜索代码，在移动端出现相同的访问异常）
-//    stieba.onclick=function(){
-//      var query = sInfor.value;
-//    if ( query ) {
-//      window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
-//    };
-//    }
-//
-
-      //github
-    sgithub.onclick=function(){
-      sAddress.action="https://github.com/search?";
-      //sInfor.type="author";
-      sInfor.name="q";
-    }
-
-      //胖次网，网盘资源检索
-    //swangpan.onclick=function(){
-      //sAddress.action="http://www.panc.cc/s";
-      //sInfor.type="author";
-      //sInfor.name="q";
-    //}
-
-
-
-
-  </script>-->
-
-
- 
- 
- 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
