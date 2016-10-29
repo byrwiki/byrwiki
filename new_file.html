@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="./css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/new.css">
+	</head>
+	<body>
+		<!--
+        	作者：i@zhangxingqiu.cn
+        	时间：2016-10-24
+        	描述：搜索框部分
+        -->
+		
+		<div class="jumbotron">
+			<div class="container">
+				<div class="input-group input-group-lg">
+					<span class="input-group-addon">全能搜</span>
+					<form action="http://www.baidu.com/s" method="get" target="_blank"/>
+                    <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " />
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：i@zhangxingqiu.cn
+        	时间：2016-10-24
+        	描述：导航部分主题
+        -->
+		
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-2 ">
+             <div class="slide-left fl list-group">
+                <ul>
+                    <li class="list-group-item">zuocedaohang</li>
+                    <li class="list-group-item">zuocedaohang</li>
+                    <li class="list-group-item">zuoyedaohang</li>
+                    <li class="list-group-item">zuoyedaohang</li>
+                    <li class="list-group-item">zuoyedaohang</li>
+                    <li class="list-group-item">zuoyedaohang</li>
+                    <li class="list-group-item">zuoyedaohang</li>
+                    <li class="list-group-item">zuoyedaohang</li>
+                </ul>
+             
+             </div>
+            </div>
+            
+            <div class="slide-right fl list-group">
+                <div class="table-content col-lg-4 ">
+                    <ul class="fl">
+                    	<li><a href="#">什么什么</a> </li>
+                    	<li><a href="#">什么什么</a> </li>
+                        <li><a href="#">什么什么</a> </li>
+                    	
+                    </ul>
+                    
+                    <ul >
+                    	<li><a href="#">什么什么</a> </li>
+                    	<li><a href="#">什么什么</a> </li>
+                        <li><a href="#">什么什么</a> </li>
+                    	
+                    </ul>
+                    
+                    <ul>
+                    	<li><a href="#">什么什么</a> </li>
+                    	<li><a href="#">什么什么</a> </li>
+                        <li><a href="#">什么什么</a> </li>
+                    	
+                    </ul>
+                    
+                </div>
+                          
+            </div>
+            
+          </div>      
+        </div>
+        <script src="http://cdn.bootcss.com/jquery/2.1.0-rc1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(".slide-left li").each(function(){
+                    $(this).click(function(){
+                        var order = $(this).index();
+                        $(".slide-right").find(".table-content").eq(order).show().siblings().hide()
+                    })
+                })
+            })
+        </script>
+    </body>
+</html>
