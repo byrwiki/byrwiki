@@ -504,10 +504,13 @@ width: 100%;
       sInfor.name="q";
     };
     //Google镜像
-    sGoogle1.onclick=function(){
-      sAddress.action="http://www.acgn.ren/search?";
-      sInfor.name="q";
-    };
+     $('#google1').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("https://guso.ml/#q=" + query, "_blank");
+        return false;
+      };
+    });
 
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
    
