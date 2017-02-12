@@ -193,9 +193,16 @@ width: 100%;
   		<br>
   		
   		
-  		  <center>
+  		  <!--<center>
     <p id="zhongjian">输入关键词，再点击下方相应按钮，即可检索！随时随地  Byr.wiki！</p>
+        </center>	-->
+        
+       
+         <center>
+    <p id="zhongjian"> 为了提供更好的服务，希望您可以参与关于本导航网站的 	<a class="btn btn-danger btn-md" href="http://byr-wiki.mikecrm.com/rfKWumS" role="button"  target="_blank">问卷调查</a></p>
         </center>	
+        
+        
         <br>
   			<br>
      			
@@ -331,8 +338,6 @@ width: 100%;
 </table>
 		
 	
-		  
-		
 				
 <!--作者：i@zhangxingqiu.cn
            时间：2016-10-07
@@ -502,11 +507,15 @@ width: 100%;
       sAddress.action="http://www.google.com/search";
       sInfor.name="q";
     };
-    //Google镜像
+    //Google镜像  2017 年 2 月 11 日 更换
      $('#google1').click(function() {
       var query = $('#search').val();
       if ( query ) {
+<<<<<<< HEAD
+        window.open("https://www.getgoogle.org/#q=" + query,"_blank");
+=======
         window.open("https://cc.zzyjxs.com/search?q=" + query,"_blank");
+>>>>>>> origin/master
         return false;
       };
     });
