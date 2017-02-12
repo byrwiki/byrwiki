@@ -508,13 +508,12 @@ width: 100%;
       sInfor.name="q";
     };
     //Google镜像  2017 年 2 月 11 日 更换
-     $('#google1').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("https://www.getgoogle.org/#q=" + query,"_blank");
-        return false;
-      };
-    });
+    //Google镜像
+    sGoogle1.onclick=function(){
+      sAddress.action="http://www.acgn.ren/search?q=";
+      sInfor.name="q";
+    }
+
 
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
    
