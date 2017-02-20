@@ -124,23 +124,14 @@ width: 100%;
     </div>
   </div>
   
-  
-  
-
-    <p></p>
-  
-
- <div class="input-group input-group-lg">
- 	 
-   <span class="input-group-addon">全能搜</span>
+  <div class="input-group input-group-lg">
+ 	  <span class="input-group-addon">全能搜</span>
     <form action="http://www.baidu.com/s" method="get" target="_blank">
    <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " baiduSug="2"  value=" " >
-  
-  
+   
  </div>
-
- 
-          
+  
+  
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
@@ -153,11 +144,12 @@ width: 100%;
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-    
-    <input type="submit" value="Byr 论坛" id="weixin3" button type="button" class="btn btn-primary"/>
+        <input type="submit" value="Byr 论坛" id="weixin3" button type="button" class="btn btn-primary"/>
     <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
  
   </center></P>
+  
+   
   
   </form>
 
@@ -509,13 +501,16 @@ width: 100%;
     };
     
     //Google镜像  2017 年 2 月 11 日 更换
-    //Google镜像
-    sGoogle1.onclick=function(){
-      sAddress.action="http://www.acgn.ren/search?q=";
-      sInfor.name="q";
-    }
-
-
+   
+    $('#google1').click(function() {
+      var query = $('#search').val();
+      if ( query ) {        window.open("http://google.hbspy.moe/#q=" + query , "_blank");
+        return false;
+      
+      };
+    });
+    
+    
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
    
     $('#jd').click(function() {
