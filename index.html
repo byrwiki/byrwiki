@@ -145,7 +145,7 @@ width: 100%;
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
         <input type="submit" value="Byr 论坛" id="weixin3" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
  
   </center></P>
   
@@ -486,7 +486,7 @@ width: 100%;
 
       var sWeixin3=document.getElementById("weixin3");
        var stieba=document.getElementById("tieba");
-     var sgithub=document.getElementById("github");
+     var sditu=document.getElementById("ditu");
      var swangpan=document.getElementById("wangpan");
 
     //百度
@@ -609,28 +609,17 @@ width: 100%;
       sInfor.name="key";
     }
 
-//    //北京邮电大学贴吧 （引用的京东搜索代码，在移动端出现相同的访问异常）
-//    stieba.onclick=function(){
-//      var query = sInfor.value;
-//    if ( query ) {
-//      window.open("http://tieba.baidu.com/f/search/res?ie=utf-8&kw=%E5%8C%97%E4%BA%AC%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6&qw=" + query, "_blank");
-//    };
-//    }
-//
 
-      //github
-    sgithub.onclick=function(){
-      sAddress.action="https://github.com/search?";
-      //sInfor.type="author";
-      sInfor.name="q";
-    }
+// 胖次  另一个检索入口
 
-      //胖次网，网盘资源检索
-    //swangpan.onclick=function(){
-      //sAddress.action="http://www.panc.cc/s";
-      //sInfor.type="author";
-      //sInfor.name="q";
-    //}
+ $('#ditu').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
+        return false;
+      
+     	};
+    });
 
 
 
