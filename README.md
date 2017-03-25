@@ -28,7 +28,7 @@
 #它们在用
 
 时光搜·河北师范大学 http://timeso.cc
-
+青科人导航·青岛科技大学 http://qingkr.top/
 
 #其它
 
