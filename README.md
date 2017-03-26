@@ -27,8 +27,10 @@
 
 #它们在用
 
-时光搜·河北师范大学 http://timeso.cc
-青科人导航·青岛科技大学 http://qingkr.top/
+* 时光搜·河北师范大学 http://timeso.cc
+* 青科人导航·青岛科技大学 http://qingkr.top
+* 长理导航·长春理工大学 http://www.custe.cn
+* 民主楼 http://minzhulou.com
 
 #其它
 
