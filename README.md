@@ -31,7 +31,6 @@
 * 青科人导航·青岛科技大学 http://qingkr.top
 * 长理导航·长春理工大学 http://www.custe.cn
 * 民主楼 http://minzhulou.com
-* 东湖首页·武汉东湖学院 http://cyzyfs.iok.la
 
 #其它
 
