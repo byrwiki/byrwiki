@@ -77,7 +77,7 @@ width: 100%;
    <!-- <a href="http://byr.wiki" id="zb" style="font-size: 19px;">北邮人导航</a>-->
     <a class="LOGO1" href="http://byr.wiki"><img id="zb" src="http://yun.zhangxingqiu.cn/images/logo7.png"  alt="北邮人导航"></a>
   
-    <a href="http://byr.wiki/liuyan.html" target="_blank" class="yb "  >留言板</a>
+    <!--<a href="http://byr.wiki/liuyan.html" target="_blank" class="yb "  >留言板</a>-->
     <a href="http://byr-navi.com/" target="_blank" class="yb">新导航</a>
        
   </div>
@@ -148,7 +148,9 @@ width: 100%;
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-        <input type="submit" value="Byr 论坛" id="weixin3" button type="button" class="btn btn-primary"/>
+        <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
+        
+        
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
  
   </center></P>
@@ -433,7 +435,7 @@ width: 100%;
         <td align="center"><a href="http://720yun.com/t/e1f2exb8ayi" target="_blank"id="lianjie">全景北邮</a></td>
         <td align="center"><a href="https://zhuanlan.zhihu.com/p/22728795" target="_blank"id="lianjie">网站特色</a></td>
         <td align="center"><a href="https://github.com/byrwiki/byrwiki.github.io/wiki/%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9" target="_blank"id="lianjie">使用帮助</a></td>
-        <td align="center"><a href="http://byr.wiki/new/" target="_blank"id="lianjie">新版导航</a></td>
+        <td align="center"><a href="byr-navi.com" target="_blank"id="lianjie">新版导航</a></td>
         <td align="center"><a href="https://zhuanlan.zhihu.com/xiaxiaozheng" target="_blank"id="lianjie">知乎专栏</a></td>
       </tr>
 		</thead>		
@@ -506,7 +508,7 @@ width: 100%;
     var sdouban=document.getElementById("douban");
     var sgequ=document.getElementById("gequ");
 
-      var sWeixin3=document.getElementById("weixin3");
+      var sziyuan=document.getElementById("ziyuan");
        var stieba=document.getElementById("tieba");
      var sditu=document.getElementById("ditu");
      var swangpan=document.getElementById("wangpan");
@@ -625,11 +627,16 @@ width: 100%;
      	};
     });
 
-    //论坛内容
-    sWeixin3.onclick=function(){
-      sAddress.action="http://search.icybee.cn/bbs/";
-      sInfor.name="key";
-    }
+    //新增疯狂影视搜索入口
+  
+$('#ziyuan').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
+        return false;
+      
+     	};
+    });
 
 
 // 胖次  另一个检索入口
