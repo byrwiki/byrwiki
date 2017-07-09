@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="http://yun.zhangxingqiu.cn/css/frontstyle.css">
 <script src="http://yun.zhangxingqiu.cn/assets/js/jquery-3.1.0.min.js"></script>
 <script src="http://yun.zhangxingqiu.cn/assets/js/jquery-migrate-3.0.0.min.js"></script>
-
+<script async type="text/javascript" src="http://mp.zhangxingqiu.cn/mp/js/background.js"></script>
 
 
 <!--本地的样式文件
@@ -37,25 +37,29 @@
 -->
 
 
-<style type="text/css">
-body  {
-background-image:url(http://yun.zhangxingqiu.cn/images/byrbg.jpg);	
-	
-	
-	/*作者：i@zhangxingqiu.cn
-	时间：2016-10-05
-	描述：这是本地测试的背景照路径*/
-	
-  /*background-image:url(images/2.jpg);*/
+<style>
+  body, html {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-z-index: -1;
-background-repeat:no-repeat;
-background-attachment:fixed;
-background-size: cover;
-height: 100%;
-width: 100%;
-}
+    margin: 0;
+    padding: 0;
+  }
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+  }
 </style>
+<canvas id="background"></canvas>
+
+
+
 
 </head>
 
