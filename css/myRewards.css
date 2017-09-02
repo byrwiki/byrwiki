@@ -1,0 +1,33 @@
+/**
+ *此代码引用自 https://github.com/HaddyYang/tctip
+ * **/
+.myRewards {position:fixed; _position:absolute; right:0; top:10%; z-index:10000; padding-left:30px; width:0px; overflow:hidden; box-sizing: content-box;}
+.myRewards ul,.myRewards li{margin:0;padding:0;}
+.myRewards img{ border:0; display:block;}
+.myRewards a{ color:#000; text-decoration:none; outline:0 none;}
+.myRewards-main{ width:240px; height:342px; font:12px/1.5 "microsoft yahei",tahoma,arial,sans-serif;; color:#000; background-color:#fff; border:1px solid #dbdbdb; border-right:none;}
+.btn-myRewards{ position:absolute; left:0; top:50%; margin-top:-72px;}
+.myR-h,.myR-bot{ margin:0; background-color:#e7e7e7;}
+.myRewards-main .myR-h{ padding:0 0 0 6px; font-size:14px; font-weight:normal; background-image:none; padding-left: 1em; height:36px; line-height:36px;}
+.myRewards-main .myR-bot{ padding-right:6px; font-size:12px; text-align:right; height:26px; line-height:26px;}
+.myR-bot a:hover{ text-decoration:underline;}
+.myRewardsbox{ font-size:0; background-color:#ddd; width:240px;}
+.myRewards-list{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; width:90px; font-size:12px;}
+.myRewards-list ul{ list-style:none;}
+.myRewards-list ul.not-full{border-top:1px solid #dfdfdf;}
+.myRewards-list li{ display:block; height:56px; -webkit-transition:background-color .2s linear; transition:background-color .2s linear;}
+.myRewards-list a{ position:relative; display:block; padding-left:40px; height:55px; line-height:55px; font-size:12px; border-bottom:1px solid #cccccc;}
+.myRewards-list a.fifth{border-bottom: none;}
+.myRewards-list a img{ position:absolute; left:6px; top:13px; width:30px; height:30px;}
+.myRewards-list .myR-on{ border-right:none;}
+.myRewards-list .myR-on a,
+.myRewards-list .myR-on a:hover{ background-color:#fff;}
+.myRewards-detail{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; width:150px; height:280px; font-size:12px; background-color:#fff;}
+.myRewards-ubox{ padding:14px 0 0 10px;}
+.myRewards-code-tit{ margin:0 0 20px; width:132px; height:30px; line-height:30px; font-size:12px; text-align:center; background-color: #e7e7e7; border-radius: 10px;}
+.myRewards-code{ margin:0 0 20px; padding:12px; width:106px; min-height: 106px; box-sizing: content-box; border:1px solid #ccc; border-radius: 14px; background-color: #fff;}
+.myRewards-code img{ width:106px; height:106px;}
+.i-myRewards{ position:absolute; right:6px; top:16px; width:23px; height:23px; line-height:23px; font-size:14px; color:#44b973; text-align:center; background:url(../img/tab_shang.png) no-repeat;}
+.myRewards-account{ font-size:12px; word-break:break-all; text-align:center;}
+.myRewards .sider-text{ font-size: 17px; width: 30px; text-align: center; background-color: #323d45; margin: 0; padding: 1em 0; border-radius: 12px; border-top-right-radius: 0; border-bottom-right-radius: 0; color: #fff; font-family: 微软雅黑,Tahoma,Verdana,Arial;}
+.myRewards .sider-close{float: right;height: 36px;line-height: 36px;font-family: sans-serif;width: 30px;text-align: center;color: #777;font-weight: bold;cursor: pointer;}
