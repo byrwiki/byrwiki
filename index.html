@@ -76,7 +76,7 @@ width: 100%;
    <!-- <a href="http://byr.wiki" id="zb" style="font-size: 19px;">北邮人导航</a>-->
     <a class="LOGO1" href="http://byr.wiki"><img id="zb" src="http://yun.zhangxingqiu.cn/images/logo7.png"  alt="北邮人导航"></a>
   
-       <a href="http://so.zhangxingqiu.cn/so/liuyan/index.html" target="_blank" class="yb">意见反馈</a>
+       <a href="http://so.zhangxingqiu.cn/so/liuyan/index.html" target="_blank" class="yb">留言板</a>
     
     <a href="http://byr-navi.com/" target="_blank" class="yb">新导航</a>
        
@@ -146,7 +146,6 @@ width: 100%;
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
         <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
         
@@ -197,7 +196,7 @@ width: 100%;
         
        
          <center>
-    <p id="zhongjian"> 为了提供更好的服务，希望您可以参与北邮人导航网站的 	<a class="btn btn-danger btn-md" href="http://byr-wiki.mikecrm.com/rfKWumS" role="button"  target="_blank">问卷调查</a></p>
+    <p id="zhongjian">即将呈现全新版本的北邮人导航，尽请期待！	<a class="btn btn-danger btn-md" href="http://so.zhangxingqiu.cn/so/liuyan/index.html" role="button"  target="_blank">参与留言</a></p>
         </center>	
         
         
@@ -509,11 +508,8 @@ width: 100%;
     var sZhihu=document.getElementById("zhihu");
     var sweibo=document.getElementById("weibo");
     var sdouban=document.getElementById("douban");
-    var sgequ=document.getElementById("gequ");
-
-      var sziyuan=document.getElementById("ziyuan");
-       var stieba=document.getElementById("tieba");
-     var sditu=document.getElementById("ditu");
+    var sziyuan=document.getElementById("ziyuan");
+    var sditu=document.getElementById("ditu");
      var swangpan=document.getElementById("wangpan");
 
     //百度
@@ -598,14 +594,7 @@ width: 100%;
       sInfor.name="q";
       //sInfor.type="question";
     }
-    //hao123 音乐
-     sgequ.onclick=function(){
-      sAddress.action="http://music.hao123.com/search?";
-      sInfor.name="key";
-      sInfor.type="1";
-    }
-    
-    
+        
      //改用网易云音乐检索 移动端检索出现异常
      
 //  $('#gequ').click(function() {
@@ -661,9 +650,9 @@ $('#ziyuan').click(function() {
     <script>
         window.tctipConfig = {
         	//最上面的文字
-            headText: "北邮人导航上线一周年！",
+            headText: "去顶部的留言板写留言吧",
             //侧边栏文本
-            siderText: "上线一周年",
+            siderText: "留言板上线",
             //侧边栏文本高度调整
             siderTextTop: "-72px",
             //侧边栏背景颜色
