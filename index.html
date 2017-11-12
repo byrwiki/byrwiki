@@ -78,7 +78,7 @@ width: 100%;
   
        <a href="http://so.zhangxingqiu.cn/so/liuyan/index.html" target="_blank" class="yb">留言板</a>
     
-    <a href="http://byr-navi.com/" target="_blank" class="yb">新导航</a>
+    <!--<a href="http://byr-navi.com/" target="_blank" class="yb">新导航</a>-->
        
   </div>
  </ul>
@@ -120,26 +120,26 @@ width: 100%;
   <div class="hidden-xs"> 
     <div class="row LOGO">
       <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-        <a href="./index.html"><img id="LOGO" src="http://yun.zhangxingqiu.cn/images/logo.svg"  alt="Responsive image"></a>
+        <a href="./index.html"><img id="LOGO" src="http://so.zhangxingqiu.cn/so/images/caise.png"  alt="Responsive image"></a>
         
         <!--<a href="./index.html"><img id="LOGO" src="images/logo3.png"  alt="Responsive image"></a>-->
         
       </div>
     </div>
   </div>
-  
+
+
   <div class="input-group input-group-lg">
- 	  <span class="input-group-addon">全能搜</span>
-    <form action="http://www.baidu.com/s" method="get" target="_blank">
-   <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " baiduSug="2"  value=" " >
-   
- </div>
-  
-  
+  <span class="input-group-addon">全能搜</span>
+  <form action="http://www.baidu.com/s" method="get" target="_blank" >
+    
+  <input type="text" class="form-control" name="search" id="search" placeholder="先输入关键词，再选择相应的检索平台，即刻检索。默认回车为百度搜索，谷歌搜索需翻墙" baiduSug="2" value=" " >
+</div>  
+       
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
    <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
@@ -147,12 +147,9 @@ width: 100%;
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-        <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
-        
-        
+    <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
- 
-  </center></P>
+    </center></P>   
   
    
   
@@ -188,16 +185,20 @@ width: 100%;
   		<br>
   		<br>
   		<br>
+  		<br>
   		
   		
   		  <!--<center>
     <p id="zhongjian">输入关键词，再点击下方相应按钮，即可检索！随时随地  Byr.wiki！</p>
         </center>	-->
-        
-       
-         <center>
-    <p id="zhongjian">即将呈现全新版本的北邮人导航，敬请期待！	<a class="btn btn-danger btn-md" href="http://so.zhangxingqiu.cn/so/liuyan/index.html" role="button"  target="_blank">参与留言</a></p>
-        </center>	
+              
+         <!--20171112停止展示底部文案-->
+         <!--<center>
+    <p id="zhongjian">待更新<a class="btn btn-danger btn-md" href="http://so.zhangxingqiu.cn/so/liuyan/index.html" role="button"  target="_blank">参与留言</a></p>
+        </center>	-->
+        <center>
+    <p id="zhongjian">萍水相逢，尽是他乡之客！ 关山难越，谁悲失路之人! ---- 更新于 2017 年 11 月 12 日</p>
+        </center>
         
         
         <br>
@@ -493,6 +494,7 @@ width: 100%;
 
 </body>
 
+
 <!--
 	作者：i@zhangxingqiu.cn
 	时间：2016-10-20
@@ -533,9 +535,9 @@ width: 100%;
     
     //Google镜像  2017 年 2 月 11 日 更换
    
-    $('#google1').click(function() {
+    $('#sougou').click(function() {
       var query = $('#search').val();
-      if ( query ) {        window.open("http://google.hbspy.moe/#q=" + query , "_blank");
+      if ( query ) {        window.open("https://www.sogou.com/web?query=" + query , "_blank");
         return false;
       
       };
@@ -611,7 +613,7 @@ width: 100%;
 //      window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
 //      return false;
 //    
-//   	};
+//    };
 //  });
     
   
@@ -624,7 +626,7 @@ width: 100%;
         window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
         return false;
       
-     	};
+      };
     });
 
     //新增疯狂影视搜索入口
@@ -635,7 +637,7 @@ $('#ziyuan').click(function() {
         window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
         return false;
       
-     	};
+      };
     });
 
 
@@ -647,7 +649,7 @@ $('#ziyuan').click(function() {
         window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
         return false;
       
-     	};
+      };
     });
 
 
@@ -658,9 +660,9 @@ $('#ziyuan').click(function() {
     <script>
         window.tctipConfig = {
         	//最上面的文字
-            headText: "去顶部的留言板写留言吧",
+            headText: "欢迎访问北邮人导航",
             //侧边栏文本
-            siderText: "留言板上线",
+            siderText: "公告栏",
             //侧边栏文本高度调整
             siderTextTop: "-72px",
             //侧边栏背景颜色
