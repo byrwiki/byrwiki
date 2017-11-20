@@ -618,12 +618,12 @@ width: 100%;
     
   
 
-// 胖次  另一个检索入口
+// 胖次  20171120 因胖次官网出现故障，临时先更换为去转盘搜索
 
  $('#panci').click(function() {
       var query = $('#search').val();
       if ( query ) {
-        window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
+        window.open("http://www.quzhuanpan.com/source/search.action?q=" + query + "&currentPage=1", "_blank");
         return false;
       
       };
@@ -641,7 +641,7 @@ $('#ziyuan').click(function() {
     });
 
 
-// 胖次  另一个检索入口
+// 地图搜索
 
  $('#ditu').click(function() {
       var query = $('#search').val();
