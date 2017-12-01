@@ -146,7 +146,8 @@ width: 100%;
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
+     <input type="submit" value="网盘2" id="quzhuanpan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
     </center></P>   
@@ -520,7 +521,8 @@ width: 100%;
     var sdouban=document.getElementById("douban");
     var sziyuan=document.getElementById("ziyuan");
     var sditu=document.getElementById("ditu");
-     var swangpan=document.getElementById("wangpan");
+    var squzhuanpan=document.getElementById("quzhuanpan");
+     
 
     //百度
     sBaidu.onclick=function(){
@@ -618,9 +620,21 @@ width: 100%;
     
   
 
-// 胖次  20171120 因胖次官网出现故障，临时先更换为去转盘搜索
+// 胖次  20171120 因胖次官网出现故障，临时先更换为去转盘搜索 20171201 开始恢复为胖次搜索
 
  $('#panci').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
+        return false;
+      
+      };
+    });
+
+
+// 20171201 新增去转盘网作为网盘搜索入口 
+
+ $('#quzhuanpan').click(function() {
       var query = $('#search').val();
       if ( query ) {
         window.open("http://www.quzhuanpan.com/source/search.action?q=" + query + "&currentPage=1", "_blank");
@@ -628,6 +642,10 @@ width: 100%;
       
       };
     });
+
+
+
+
 
     //新增疯狂影视搜索入口
   
