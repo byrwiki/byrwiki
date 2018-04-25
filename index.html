@@ -113,9 +113,10 @@ width: 100%;
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
-     <input type="submit" value="网盘2" id="quzhuanpan" button type="button" class="btn btn-primary"/>
+     <input type="submit" value="新网盘" id="quzhuanpan" button type="button" class="btn btn-success"/>
     <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="学术" id="xueshu" button type="button" class="btn btn-primary"/>
     </center></P>   
   
    
@@ -148,7 +149,7 @@ width: 100%;
   		<br>
  
         <center>
-    <p id="zhongjian">科学上网软件推荐<a class="btn btn-danger btn-md" href="https://github.com/byrwiki/byrwiki/issues/13" role="button"  target="_blank">点我了解</a>祝大家狗年大吉--更新于2018年3月26日</p>
+    <p id="zhongjian">无聊？访问这个页面试试<a class="btn btn-primary btn-md" href="https://docs.qq.com/doc/BqI21X2yZIht1Eu8Eq1W8k7G06oS7v3RVXPB2nx6Xr07162S2X9b1I2qP48x2LUVm148XcpO3AKp4i2z6shs2" role="button"  target="_blank">戳我</a>祝五一快乐--更新于2018年4月25日</p>
         </center>
         
         
@@ -255,16 +256,14 @@ width: 100%;
 	<tbody>
 		<tr style="background: rgba(45, 43, 43, 0.43);" >
       <td align="center" id="fenlei1">推荐</td>
-      
-      <td align="center"><a href="http://www.panc.cc/" target="_blank" id="lianjie">胖次网盘</a></td>
-      
-      <td align="center"><a href="http://www.quzhuanpan.com/" target="_blank" id="lianjie">去转盘网</a></td>
-      <td align="center"> </td>
-      <td align="center"><a href="http://xiaolvji.com/" target="_blank" id="lianjie">效率集</a></td>
+      <td align="center"><a href="https://www.xiami.com" target="_blank" id="lianjie">虾米音乐</a></td>
+      <td align="center"><a href="http://music.163.com" target="_blank" id="lianjie">网易云音乐</a></td>      
+      <td align="center"><a href="http://music.baidu.com/top/" target="_blank" id="lianjie">百度音乐</a></td>  
+      <td align="center"><a href="http://music.163.com/#/discover/toplist?id=3778678" target="_blank" id="lianjie">热歌排行</a></td>
       <td align="center" id="fenlei">无名</td>
       <td align="center"><a href="http://ilxdh.com/" target="_blank" id="lianjie">龙轩导航</a></td>           
       <td align="center"><a href="https://movie.douban.com/chart" target="_blank" id="lianjie">高分电影</a></td>
-      <td align="center"><!--<a href="http://life.zhangxingqiu.cn/2016/01/16/%E7%BA%A2%E6%9D%8F%E5%87%BA%E5%A2%99/" target="_blank" id="lianjie1">科学上网</a>--></td>
+      <td align="center"><a href="https://github.com/byrwiki/byrwiki/issues/13" target="_blank" id="lianjie1">科学上网</a></td>
       <td align="center"><!--<a href="https://aixyz.com/" target="_blank" id="lianjie">出墙</a>--></td>
       
   
@@ -382,6 +381,7 @@ width: 100%;
     var sdouban=document.getElementById("douban");
     var sziyuan=document.getElementById("ziyuan");
     var sditu=document.getElementById("ditu");
+    var sditu=document.getElementById("xueshu");
     var squzhuanpan=document.getElementById("quzhuanpan");
      
 
@@ -493,12 +493,12 @@ width: 100%;
     });
 
 
-// 20171201 新增去转盘网作为网盘搜索入口 
+// 20180425 更换网盘检索入口，采用网友推荐的58网盘搜索
 
  $('#quzhuanpan').click(function() {
       var query = $('#search').val();
       if ( query ) {
-        window.open("http://www.quzhuanpan.com/source/search.action?q=" + query + "&currentPage=1", "_blank");
+        window.open("http://www.58wangpan.com/search/kw" + query + "", "_blank");
         return false;
       
       };
@@ -531,10 +531,19 @@ $('#ziyuan').click(function() {
       };
     });
 
+// 根据网友建议，新增搜索入口：百度学术
+
+ $('#xueshu').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://xueshu.baidu.com/s?wd=" + query + " ", "_blank");
+        return false;
+      
+      };
+    });
 
 
-
- <!--2018年2月3日停用</script>
+</script>
   <link type="text/css" rel="stylesheet" href="./byrwiki/myRewards.css">
     <script>
         window.tctipConfig = {
@@ -565,7 +574,7 @@ $('#ziyuan').click(function() {
     </script>
     <script src="./byrwiki/tctip.min.js"></script>
 
-  -->
+
   
 
 </html>
