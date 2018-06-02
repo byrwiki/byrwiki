@@ -113,7 +113,7 @@ width: 100%;
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
+   <!-- <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>-->
      <input type="submit" value="新网盘" id="quzhuanpan" button type="button" class="btn btn-success"/>
     <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
@@ -380,7 +380,7 @@ width: 100%;
     var sZhihu=document.getElementById("zhihu");
     var sweibo=document.getElementById("weibo");
     var sdouban=document.getElementById("douban");
-    var sziyuan=document.getElementById("ziyuan");
+
     var sditu=document.getElementById("ditu");
     var sditu=document.getElementById("xueshu");
     var squzhuanpan=document.getElementById("quzhuanpan");
@@ -482,16 +482,6 @@ width: 100%;
     
   
 
-// 胖次  20171120 因胖次官网出现故障，临时先更换为去转盘搜索 20171201 开始恢复为胖次搜索
-
- $('#panci').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
-        return false;
-      
-      };
-    });
 
 
 // 20180425 更换网盘检索入口，采用网友推荐的58网盘搜索
