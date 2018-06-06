@@ -21,7 +21,7 @@
 
 <style type="text/css">
 body  {
-background-image:url(http://timeso.cc/images/05.jpg);	
+background-image:url(https://api.lylares.com/bing/image/?1366/768/-1);	
 
 /*作者：i@zhangxingqiu.cn
 时间：2016-10-05
@@ -113,7 +113,7 @@ width: 100%;
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
-   <!-- <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>-->
+   <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
      <input type="submit" value="新网盘" id="quzhuanpan" button type="button" class="btn btn-success"/>
     <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
@@ -150,7 +150,7 @@ width: 100%;
   		<br>
  
         <center>
-    <p id="zhongjian">无聊？访问<a class="btn btn-primary btn-md" href="https://docs.qq.com/doc/BqI21X2yZIht1Eu8Eq1W8k7G06oS7v3RVXPB2nx6Xr07162S2X9b1I2qP48x2LUVm148XcpO3AKp4i2z6shs2" role="button"  target="_blank">戳我</a> 科学上网？访问<a class="btn btn-primary btn-md" href="https://github.com/byrwiki/byrwiki/issues/13" role="button"  target="_blank">点我</a>--更新于2018年6月2日</p>
+    <p id="zhongjian">无聊？访问<a class="btn btn-primary btn-md" href="https://docs.qq.com/doc/BqI21X2yZIht1Eu8Eq1W8k7G06oS7v3RVXPB2nx6Xr07162S2X9b1I2qP48x2LUVm148XcpO3AKp4i2z6shs2" role="button"  target="_blank">戳我</a> 科学上网？访问<a class="btn btn-primary btn-md" href="https://github.com/byrwiki/byrwiki/issues/13" role="button"  target="_blank">点我</a>--更新于2018年6月6日</p>
         </center>
         
         
@@ -380,7 +380,7 @@ width: 100%;
     var sZhihu=document.getElementById("zhihu");
     var sweibo=document.getElementById("weibo");
     var sdouban=document.getElementById("douban");
-
+    var sziyuan=document.getElementById("ziyuan");
     var sditu=document.getElementById("ditu");
     var sditu=document.getElementById("xueshu");
     var squzhuanpan=document.getElementById("quzhuanpan");
@@ -510,6 +510,18 @@ $('#ziyuan').click(function() {
       };
     });
 
+-// 胖次  20171120 因胖次官网出现故障，临时先更换为去转盘搜索 20171201 开始恢复为胖次搜索
+
+ $('#panci').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
+        return false;
+      
+      };
+    });
+
+
 
 // 地图搜索
 
@@ -535,35 +547,6 @@ $('#ziyuan').click(function() {
 
 
 </script>
-  <link type="text/css" rel="stylesheet" href="./byrwiki/myRewards.css">
-    <script>
-        window.tctipConfig = {
-        	//最上面的文字
-            headText: "欢迎访问北邮人导航",
-            //侧边栏文本
-            siderText: "公告栏",
-            //侧边栏文本高度调整
-            siderTextTop: "-72px",
-            //侧边栏背景颜色
-            siderBgcolor: "#323d45",
-            //整个侧边栏的高度设置可以px，em，或百分比
-            siderTop:"118px",
-            //底部文字
-            buttomText:"点此关注作者知乎",
-                      buttomLink:"https://www.zhihu.com/people/xiaxiaozheng/activities",
- 
-            
-            list:{
-                notice: {icon: "./byrwiki/tip.png", name:"网站公告", className:"myR-on", text:'北邮人导航自2016年9月23日上线至2017年9月23日，累计页面浏览已超 200W，累计访问用户超 100W，感谢一路有你！'},
-                              
-               alipay: {icon: "./byrwiki/alipay.png", name:"打赏我们", desc: "震惊！北邮人导航站长生活潦倒，只能靠求赏为生", qrimg: "./byrwiki/alipay.jpg"},
-                weixin: {icon: "./byrwiki/weixin.png", name:"微信公号", desc: "关注作者个人微信公众号【小正说事】", qrimg: "./byrwiki/gonghao.jpg"}	
-                             
-                                
-            }
-        };
-    </script>
-    <script src="./byrwiki/tctip.min.js"></script>
 
 
   
