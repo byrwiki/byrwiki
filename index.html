@@ -101,7 +101,7 @@ width: 100%;
   <span class="input-group-addon">全能搜</span>
   <form action="http://www.baidu.com/s" method="get" target="_blank" >
     
-  <input type="text" class="form-control" name="search" id="search" placeholder="先输入关键词，再选择相应的检索平台，即刻检索。默认回车为百度搜索，谷歌搜索需翻墙" baiduSug="2" value=" " >
+  <input type="text" class="form-control" name="search" id="search" placeholder="先输入关键词，再选择相应的检索平台，即刻检索。默认回车为百度搜索，谷歌搜索需翻墙" baiduSug="2"  >
 </div>  
        
     <P><center>
@@ -115,10 +115,11 @@ width: 100%;
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
    <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
-     <input type="submit" value="新网盘" id="quzhuanpan" button type="button" class="btn btn-success"/>
+     <input type="submit" value="网盘2" id="quzhuanpan" button type="button" class="btn btn-success"/>
+   <input type="submit" value="网盘3" id="xueshu" button type="button" class="btn btn-primary"/>
     <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="学术" id="xueshu" button type="button" class="btn btn-primary"/>
+
     </center></P>   
   
    
@@ -152,7 +153,7 @@ width: 100%;
  
         <center>
     <!--<p id="zhongjian">无聊？访问<a class="btn btn-primary btn-md" href="https://docs.qq.com/doc/BqI21X2yZIht1Eu8Eq1W8k7G06oS7v3RVXPB2nx6Xr07162S2X9b1I2qP48x2LUVm148XcpO3AKp4i2z6shs2" role="button"  target="_blank">戳我</a></p>-->
-    <p id="zhongjian">打开支付宝，轻松扫一扫，每天领取红包<a class="btn btn-danger btn-md" href="https://docs.qq.com/doc/BqI21X2yZIht1Eu8Eq1W8k7G01C4JC3PMK553IbN5X3HA83S4IQmKC2Cjyb92luCti3KF4380CcChM2Z2keP1?opendocxfrom=admin" role="button"  target="_blank">猛戳我</a>--更新于2018年6月23日</p>
+    <p id="zhongjian">打开支付宝，轻松扫一扫，每天领取红包<a class="btn btn-danger btn-md" href="https://docs.qq.com/doc/BqI21X2yZIht1Eu8Eq1W8k7G01C4JC3PMK553IbN5X3HA83S4IQmKC2Cjyb92luCti3KF4380CcChM2Z2keP1?opendocxfrom=admin" role="button"  target="_blank">猛戳我</a>--更新于2018年7月12日</p>
     
         </center>
         
@@ -249,7 +250,7 @@ width: 100%;
       <td align="center"><a href="http://weixin.sogou.com/" target="_blank" id="lianjie">微信热门</a></td>
   <!--<td align="center"><a href="http://www.hao123.com/video" target="_blank">更多</a></td>-->
       <td align="center" id="fenlei1">他们</td>
-      <td align="center"><a href="http://aust.me/" target="_blank" id="lianjie">安理导航</a></td>
+      <td align="center"><a href="http://aust.me/" target="_blank" id="lianjie"> </a></td>
       
       <td align="center"><a href="http://timeso.cc" target="_blank" id="lianjie1">时光搜</a></td>
       <td align="center"><a href="http://somelemon.com/" target="_blank" id="lianjie1">柠檬精选</a></td>
@@ -513,12 +514,12 @@ $('#ziyuan').click(function() {
       };
     });
 
--// 胖次  20171120 因胖次官网出现故障，临时先更换为去转盘搜索 20171201 开始恢复为胖次搜索
+-// 胖次  20180712 考虑到最近胖次网盘搜索体验下降，更换为另一个网盘代替
 
  $('#panci').click(function() {
       var query = $('#search').val();
       if ( query ) {
-        window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
+        window.open("http://www.xiaobaipan.com/list-" + query + ".html", "_blank");
         return false;
       
       };
@@ -537,12 +538,12 @@ $('#ziyuan').click(function() {
       };
     });
 
-// 根据网友建议，新增搜索入口：百度学术
+// 根据网友建议，新增搜索入口：百度学术——7.12更新，下线学术搜索入口，更换为007网盘搜索入口
 
  $('#xueshu').click(function() {
       var query = $('#search').val();
       if ( query ) {
-        window.open("http://xueshu.baidu.com/s?wd=" + query + " ", "_blank");
+        window.open("https://wangpan007.com/share/kw" + query + " ", "_blank");
         return false;
       
       };
