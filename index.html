@@ -104,7 +104,7 @@ width: 100%;
   <input type="text" class="form-control" name="search" id="search" placeholder="先输入关键词，再选择相应的检索平台，即刻检索。默认回车为百度搜索，谷歌搜索需翻墙" baiduSug="2"  value=" " >
 </div>  
        
-    <P><center>
+    <P id="search-btns"><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-primary"/>
@@ -399,13 +399,35 @@ width: 100%;
       sInfor.name="q";
     };
     
-    //Google镜像  2017 年 2 月 11 日 更换
-   
+    // 获取 config 文件的内容
+    $.getJSON('config.json', function (configData) {
+      let sites = configData['sites'];
+      $.each(sites, function(name, query) {
+        $("#search-btns").append(`
+          <input
+            type="submit"
+            value="${name}"
+            id="${name}"
+            button
+            type="button"
+            class="btn btn-primary"
+          />
+        `);
+        $("#" + name).click(function() {
+          let searchUrl = query.replace("{}", $('#search').val());
+          if (searchUrl) {
+            window.open(searchUrl, "_blank");
+            return false;
+          }
+        })
+      })
+    });
+    
     $('#sougou').click(function() {
       var query = $('#search').val();
-      if ( query ) {        window.open("https://www.sogou.com/web?query=" + query , "_blank");
+      if ( query ) {
+        window.open("https://www.sogou.com/web?query=" + query , "_blank");
         return false;
-      
       };
     });
     
