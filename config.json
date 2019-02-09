@@ -59,6 +59,7 @@
     {
       "name": "网盘2",
       "id": "quzhuanpan",
+      "color": "success",
       "queryUrl": "http://www.58wangpan.com/search/kw{}"
     },
     {

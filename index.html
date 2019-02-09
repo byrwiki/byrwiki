@@ -408,8 +408,11 @@ width: 100%;
      * config 文件的配置方法：
      *   1. name: 显示在按钮上的文字
      *   2. id: HTML 页面中该按钮对应的 id 属性
-     *   3. queryUrl: 相应站点的搜索路径，其中 "{}" 将被搜索框中的关键词替代
-     *   4. display: 可选属性，若设置为 false 则不渲染该按钮，若设置为 true 则
+     *   3. color: 可选属性。对应搜索按钮的颜色。可选：primary（默认）, secondary,
+     *      success, danger, warning, info, light, dark, white。详情可参考：
+     *      Bootstrap 文档：https://getbootstrap.com/docs/4.0/utilities/colors/
+     *   4. queryUrl: 相应站点的搜索路径，其中 "{}" 将被搜索框中的关键词替代
+     *   5. display: 可选属性，若设置为 false 则不渲染该按钮，若设置为 true 则
      *      渲染该按钮。若不设置此属性，则默认进行渲染。
      */ 
     $.getJSON('config.json', function (configData) {
@@ -421,11 +424,11 @@ width: 100%;
         $("#search-btns").append(`
           <input
             type="submit"
-            value="${site.name}"
-            id="${site.id}"
+            value="${ site.name }"
+            id="${ site.id }"
             button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-${ 'color' in site ? site.color : 'primary' }"
           />
         `);
         $("#" + site.id).click(function() {
