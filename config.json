@@ -1,11 +1,6 @@
 {
   "sites": [
     {
-      "name": "搜狗",
-      "id": "sogou",
-      "queryUrl": "https://www.sogou.com/web?query={}"
-    },
-    {
       "name": "百度",
       "id": "baidu",
       "queryUrl": "https://www.baidu.com/s?wd={}"
@@ -14,6 +9,11 @@
       "name": "谷歌",
       "id": "google",
       "queryUrl": "http://www.google.com/search?q={}"
+    },
+    {
+      "name": "搜狗",
+      "id": "sogou",
+      "queryUrl": "https://www.sogou.com/web?query={}"
     },
     {
       "name": "京东",
