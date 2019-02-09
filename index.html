@@ -402,19 +402,20 @@ width: 100%;
     // 获取 config 文件的内容
     $.getJSON('config.json', function (configData) {
       let sites = configData['sites'];
-      $.each(sites, function(name, query) {
+      console.log(sites);
+      $.each(sites, function(i, site) {
         $("#search-btns").append(`
           <input
             type="submit"
-            value="${name}"
-            id="${name}"
+            value="${site.name}"
+            id="${site.id}"
             button
             type="button"
             class="btn btn-primary"
           />
         `);
-        $("#" + name).click(function() {
-          let searchUrl = query.replace("{}", $('#search').val());
+        $("#" + site.id).click(function() {
+          let searchUrl = site.queryUrl.replace("{}", $('#search').val());
           if (searchUrl) {
             window.open(searchUrl, "_blank");
             return false;
