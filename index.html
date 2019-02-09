@@ -105,7 +105,7 @@ width: 100%;
 </div>  
        
     <P><center id="search-btns">
-    <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
+    <!-- <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
@@ -117,7 +117,7 @@ width: 100%;
    <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
      <input type="submit" value="网盘2" id="quzhuanpan" button type="button" class="btn btn-success"/>
    <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/> -->
 
     </center></P>   
   
@@ -371,33 +371,33 @@ width: 100%;
   
    
   <script>
-    var sAddress=document.getElementsByTagName("form")[0];
-    var sInfor=document.getElementById("search");
-    var sBaidu=document.getElementById("baidu");
-    var sGoogle=document.getElementById("google");
-    var sGoogle1=document.getElementById("google1");
-    var sjd=document.getElementById("jd");
-    var stianmao=document.getElementById("tianmao");
-    var staobao=document.getElementById("taobao");
-    var sWeixin=document.getElementById("weixin");
-    var sZhihu=document.getElementById("zhihu");
-    var sweibo=document.getElementById("weibo");
-    var sdouban=document.getElementById("douban");
-    var sziyuan=document.getElementById("ziyuan");
-    var sditu=document.getElementById("ditu");
-    var squzhuanpan=document.getElementById("quzhuanpan");
+    // var sAddress=document.getElementsByTagName("form")[0];
+    // var sInfor=document.getElementById("search");
+    // var sBaidu=document.getElementById("baidu");
+    // var sGoogle=document.getElementById("google");
+    // var sGoogle1=document.getElementById("google1");
+    // var sjd=document.getElementById("jd");
+    // var stianmao=document.getElementById("tianmao");
+    // var staobao=document.getElementById("taobao");
+    // var sWeixin=document.getElementById("weixin");
+    // var sZhihu=document.getElementById("zhihu");
+    // var sweibo=document.getElementById("weibo");
+    // var sdouban=document.getElementById("douban");
+    // var sziyuan=document.getElementById("ziyuan");
+    // var sditu=document.getElementById("ditu");
+    // var squzhuanpan=document.getElementById("quzhuanpan");
      
 
-    //百度
-    sBaidu.onclick=function(){
-      sAddress.action="https://www.baidu.com/s";
-      sInfor.name="wd";
-    }
-    //Google
-    sGoogle.onclick=function(){
-      sAddress.action="http://www.google.com/search";
-      sInfor.name="q";
-    };
+    // //百度
+    // sBaidu.onclick=function(){
+    //   sAddress.action="https://www.baidu.com/s";
+    //   sInfor.name="wd";
+    // }
+    // //Google
+    // sGoogle.onclick=function(){
+    //   sAddress.action="http://www.google.com/search";
+    //   sInfor.name="q";
+    // };
     
     /**
      * modified @ 02/09/2019
@@ -438,140 +438,140 @@ width: 100%;
       })
     });
     
-    $('#sougou').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("https://www.sogou.com/web?query=" + query , "_blank");
-        return false;
-      };
-    });
+//     $('#sougou').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("https://www.sogou.com/web?query=" + query , "_blank");
+//         return false;
+//       };
+//     });
     
     
-    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+//     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
    
-    $('#jd').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-        return false;
-      };
-    });
+//     $('#jd').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+//         return false;
+//       };
+//     });
 
 
-    //天猫  搜索需求下 暂时下架
-//  stianmao.onclick=function(){
-//    sAddress.action="https://list.tmall.com/search_product.htm?";
-//    sInfor.name="q";
-//    //sInfor.type="enc=utf-8";
-//  }
+//     //天猫  搜索需求下 暂时下架
+// //  stianmao.onclick=function(){
+// //    sAddress.action="https://list.tmall.com/search_product.htm?";
+// //    sInfor.name="q";
+// //    //sInfor.type="enc=utf-8";
+// //  }
     
-    //淘宝
-    staobao.onclick=function(){
-      sAddress.action="https://s.taobao.com/search?";
-      sInfor.name="q";
-    }
+//     //淘宝
+//     staobao.onclick=function(){
+//       sAddress.action="https://s.taobao.com/search?";
+//       sInfor.name="q";
+//     }
     
-      //微信  恢复上线
-     $('#weixin').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
-        return false;
+//       //微信  恢复上线
+//      $('#weixin').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
+//         return false;
       
-      };
-    });
+//       };
+//     });
 
-    //知乎
-    sZhihu.onclick=function(){
-      sAddress.action="https://www.zhihu.com/search";
-      sInfor.name="q";
-      sInfor.type="question";
-    }
-//    //微博 （检索异常）
-//    sweibo.onclick=function(){
-//      sAddress.action="http://s.weibo.com/weibo/?";
-//      //sInfor.name="q";
-//      //sInfor.type="question";
-//    }
-    $('#weibo').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://s.weibo.com/weibo/" + query, "_blank");
-        return false;
-      };
-    });
+//     //知乎
+//     sZhihu.onclick=function(){
+//       sAddress.action="https://www.zhihu.com/search";
+//       sInfor.name="q";
+//       sInfor.type="question";
+//     }
+// //    //微博 （检索异常）
+// //    sweibo.onclick=function(){
+// //      sAddress.action="http://s.weibo.com/weibo/?";
+// //      //sInfor.name="q";
+// //      //sInfor.type="question";
+// //    }
+//     $('#weibo').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("http://s.weibo.com/weibo/" + query, "_blank");
+//         return false;
+//       };
+//     });
 
-    //豆瓣
-    sdouban.onclick=function(){
-      sAddress.action="https://www.douban.com/search?";
-      sInfor.name="q";
-      //sInfor.type="question";
-    }
+//     //豆瓣
+//     sdouban.onclick=function(){
+//       sAddress.action="https://www.douban.com/search?";
+//       sInfor.name="q";
+//       //sInfor.type="question";
+//     }
         
-     //改用网易云音乐检索 移动端检索出现异常
+//      //改用网易云音乐检索 移动端检索出现异常
      
-//  $('#gequ').click(function() {
-//    var query = $('#search').val();
-//    if ( query ) {
-//      window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
-//      return false;
-//    
-//    };
-//  });
+// //  $('#gequ').click(function() {
+// //    var query = $('#search').val();
+// //    if ( query ) {
+// //      window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+// //      return false;
+// //    
+// //    };
+// //  });
     
   
 
 
 
-// 20180425 更换网盘检索入口，采用网友推荐的58网盘搜索
+// // 20180425 更换网盘检索入口，采用网友推荐的58网盘搜索
 
- $('#quzhuanpan').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://www.58wangpan.com/search/kw" + query + "", "_blank");
-        return false;
+//  $('#quzhuanpan').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("http://www.58wangpan.com/search/kw" + query + "", "_blank");
+//         return false;
       
-      };
-    });
+//       };
+//     });
 
 
 
 
 
-    //新增疯狂影视搜索入口
+//     //新增疯狂影视搜索入口
   
-$('#ziyuan').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
-        return false;
+// $('#ziyuan').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
+//         return false;
       
-      };
-    });
+//       };
+//     });
 
--// 胖次  20180806 恢复胖次的使用，
+// -// 胖次  20180806 恢复胖次的使用，
 
- $('#panci').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
-        return false;
+//  $('#panci').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
+//         return false;
       
-      };
-    });
+//       };
+//     });
 
 
 
-// 地图搜索
+// // 地图搜索
 
- $('#ditu').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
-        return false;
+//  $('#ditu').click(function() {
+//       var query = $('#search').val();
+//       if ( query ) {
+//         window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
+//         return false;
       
-      };
-    });
+//       };
+//     });
 
 
 
