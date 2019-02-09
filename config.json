@@ -63,7 +63,7 @@
       "queryUrl": "http://www.58wangpan.com/search/kw{}"
     },
     {
-      "name": "资源",
+      "name": "影视",
       "id": "ziyuan",
       "queryUrl": "http://ifkdy.com/?q={}&p=1"
     },
