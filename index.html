@@ -376,7 +376,7 @@ width: 100%;
      *   5. display: 可选属性，若设置为 false 则不渲染该按钮，若设置为 true 则
      *      渲染该按钮。若不设置此属性，则默认进行渲染。
      */ 
-    $.getJSON('config.json', function (configData) {
+    $.getJSON('./config/config.json', function (configData) {
       let sites = configData['sites'];
       $.each(sites, function(i, site) {
         if ('display' in site && site.display === false) {
@@ -412,7 +412,7 @@ width: 100%;
     //     return false;
     //   };
     // });
-    
+
 </script>
 
 
