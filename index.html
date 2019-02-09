@@ -404,6 +404,9 @@ width: 100%;
       let sites = configData['sites'];
       console.log(sites);
       $.each(sites, function(i, site) {
+        if ('display' in site && site.display === false) {
+          return true;
+        }
         $("#search-btns").append(`
           <input
             type="submit"
