@@ -1,0 +1,76 @@
+{
+  "sites": [
+    {
+      "name": "百度",
+      "id": "baidu",
+      "queryUrl": "https://www.baidu.com/s?wd={}"
+    },
+    {
+      "name": "谷歌",
+      "id": "google",
+      "queryUrl": "http://www.google.com/search?q={}"
+    },
+    {
+      "name": "搜狗",
+      "id": "sogou",
+      "queryUrl": "https://www.sogou.com/web?query={}"
+    },
+    {
+      "name": "京东",
+      "id": "jd",
+      "queryUrl": "http://search.jd.com/Search?enc=utf-8&keyword={}"
+    },
+    {
+      "name": "天猫",
+      "id": "tmall",
+      "queryUrl": "https://list.tmall.com/search_product.htm?q={}",
+      "display": false
+    },
+    {
+      "name": "淘宝",
+      "id": "taobao",
+      "queryUrl": "https://s.taobao.com/search?q={}"
+    },
+    {
+      "name": "微信",
+      "id": "weixin",
+      "queryUrl": "http://weixin.sogou.com/weixin?type=2&query={}&ie=utf8"
+    },
+    {
+      "name": "知乎",
+      "id": "zhihu",
+      "queryUrl": "https://www.zhihu.com/search?q={}"
+    },
+    {
+      "name": "微博",
+      "id": "weibo",
+      "queryUrl": "http://s.weibo.com/weibo/{}"
+    },
+    {
+      "name": "豆瓣",
+      "id": "douban",
+      "queryUrl": "https://www.douban.com/search?q={}"
+    },
+    {
+      "name": "网盘1",
+      "id": "panci",
+      "queryUrl": "https://www.panc.cc/s/{}/td_0"
+    },
+    {
+      "name": "网盘2",
+      "id": "quzhuanpan",
+      "color": "success",
+      "queryUrl": "http://www.58wangpan.com/search/kw{}"
+    },
+    {
+      "name": "影视",
+      "id": "ziyuan",
+      "queryUrl": "http://ifkdy.com/?q={}&p=1"
+    },
+    {
+      "name": "地图",
+      "id": "ditu",
+      "queryUrl": "http://ditu.amap.com/search?query={} "
+    }
+  ]
+}

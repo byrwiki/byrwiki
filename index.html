@@ -104,22 +104,10 @@ width: 100%;
   <input type="text" class="form-control" name="search" id="search" placeholder="先输入关键词，再选择相应的检索平台，即刻检索。默认回车为百度搜索，谷歌搜索需翻墙" baiduSug="2"  value=" " >
 </div>  
        
-    <P><center>
-    <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
-    <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
-   <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
-    <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
-   <input type="submit" value="网盘1" id="panci" button type="button" class="btn btn-primary"/>
-     <input type="submit" value="网盘2" id="quzhuanpan" button type="button" class="btn btn-success"/>
-   <input type="submit" value="影视" id="ziyuan" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
-
-    </center></P>   
+    <P>
+      <center id="search-btns">
+      </center>
+    </P>
   
    
   
@@ -371,172 +359,59 @@ width: 100%;
   
    
   <script>
-    var sAddress=document.getElementsByTagName("form")[0];
-    var sInfor=document.getElementById("search");
-    var sBaidu=document.getElementById("baidu");
-    var sGoogle=document.getElementById("google");
-    var sGoogle1=document.getElementById("google1");
-    var sjd=document.getElementById("jd");
-    var stianmao=document.getElementById("tianmao");
-    var staobao=document.getElementById("taobao");
-    var sWeixin=document.getElementById("weixin");
-    var sZhihu=document.getElementById("zhihu");
-    var sweibo=document.getElementById("weibo");
-    var sdouban=document.getElementById("douban");
-    var sziyuan=document.getElementById("ziyuan");
-    var sditu=document.getElementById("ditu");
-    var squzhuanpan=document.getElementById("quzhuanpan");
-     
-
-    //百度
-    sBaidu.onclick=function(){
-      sAddress.action="https://www.baidu.com/s";
-      sInfor.name="wd";
-    }
-    //Google
-    sGoogle.onclick=function(){
-      sAddress.action="http://www.google.com/search";
-      sInfor.name="q";
-    };
-    
-    //Google镜像  2017 年 2 月 11 日 更换
-   
-    $('#sougou').click(function() {
-      var query = $('#search').val();
-      if ( query ) {        window.open("https://www.sogou.com/web?query=" + query , "_blank");
-        return false;
       
-      };
-    });
-    
-    
-    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
-   
-    $('#jd').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
-        return false;
-      };
-    });
-
-
-    //天猫  搜索需求下 暂时下架
-//  stianmao.onclick=function(){
-//    sAddress.action="https://list.tmall.com/search_product.htm?";
-//    sInfor.name="q";
-//    //sInfor.type="enc=utf-8";
-//  }
-    
-    //淘宝
-    staobao.onclick=function(){
-      sAddress.action="https://s.taobao.com/search?";
-      sInfor.name="q";
-    }
-    
-      //微信  恢复上线
-     $('#weixin').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
-        return false;
-      
-      };
-    });
-
-    //知乎
-    sZhihu.onclick=function(){
-      sAddress.action="https://www.zhihu.com/search";
-      sInfor.name="q";
-      sInfor.type="question";
-    }
-//    //微博 （检索异常）
-//    sweibo.onclick=function(){
-//      sAddress.action="http://s.weibo.com/weibo/?";
-//      //sInfor.name="q";
-//      //sInfor.type="question";
-//    }
-    $('#weibo').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://s.weibo.com/weibo/" + query, "_blank");
-        return false;
-      };
+    /**
+     * modified @ 02/09/2019
+     * by Yanqing Wang (wangyanqingchn@gmail.com)
+     * 
+     * 获取 config 文件（config.json）的数据并据其添加搜索按钮
+     *
+     * config 文件的配置方法：
+     *   1. name: 显示在按钮上的文字
+     *   2. id: HTML 页面中该按钮对应的 id 属性
+     *   3. color: 可选属性。对应搜索按钮的颜色。可选：primary（默认）, secondary,
+     *      success, danger, warning, info, light, dark, white。详情可参考：
+     *      Bootstrap 文档：https://getbootstrap.com/docs/4.0/utilities/colors/
+     *   4. queryUrl: 相应站点的搜索路径，其中 "{}" 将被搜索框中的关键词替代
+     *   5. display: 可选属性，若设置为 false 则不渲染该按钮，若设置为 true 则
+     *      渲染该按钮。若不设置此属性，则默认进行渲染。
+     */ 
+    $.getJSON('./config/config.json', function (configData) {
+      let sites = configData['sites'];
+      $.each(sites, function(i, site) {
+        if ('display' in site && site.display === false) {
+          return true;
+        }
+        $("#search-btns").append(`
+          <input
+            type="submit"
+            value="${ site.name }"
+            id="${ site.id }"
+            button
+            type="button"
+            class="btn btn-${ 'color' in site ? site.color : 'primary' }"
+          />
+        `);
+        $("#" + site.id).click(function() {
+          let searchUrl = site.queryUrl.replace("{}", $('#search').val());
+          if (searchUrl) {
+            window.open(searchUrl, "_blank");
+            return false;
+          }
+        })
+      })
     });
 
-    //豆瓣
-    sdouban.onclick=function(){
-      sAddress.action="https://www.douban.com/search?";
-      sInfor.name="q";
-      //sInfor.type="question";
-    }
-        
-     //改用网易云音乐检索 移动端检索出现异常
-     
-//  $('#gequ').click(function() {
-//    var query = $('#search').val();
-//    if ( query ) {
-//      window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
-//      return false;
-//    
-//    };
-//  });
-    
-  
-
-
-
-// 20180425 更换网盘检索入口，采用网友推荐的58网盘搜索
-
- $('#quzhuanpan').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://www.58wangpan.com/search/kw" + query + "", "_blank");
-        return false;
-      
-      };
-    });
-
-
-
-
-
-    //新增疯狂影视搜索入口
-  
-$('#ziyuan').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
-        return false;
-      
-      };
-    });
-
--// 胖次  20180806 恢复胖次的使用，
-
- $('#panci').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
-        return false;
-      
-      };
-    });
-
-
-
-// 地图搜索
-
- $('#ditu').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
-        return false;
-      
-      };
-    });
-
-
+    // 保留的错误日志
+    //
+    // // 改用网易云音乐检索 移动端检索出现异常
+    // $('#gequ').click(function() {
+    //   var query = $('#search').val();
+    //   if ( query ) {
+    //     window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+    //     return false;
+    //   };
+    // });
 
 </script>
 
