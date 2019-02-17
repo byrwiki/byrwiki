@@ -52,9 +52,10 @@
       "queryUrl": "https://www.douban.com/search?q={}"
     },
     {
-      "name": "网盘1",
+      "name": "新网盘",
       "id": "panci",
-      "queryUrl": "https://www.panc.cc/s/{}/td_0"
+       "color": "danger",
+      "queryUrl": "https://www.cilimao.cc/search?word={}&page=1"
     },
     {
       "name": "网盘2",
