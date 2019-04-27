@@ -57,12 +57,6 @@
        "color": "danger",
       "queryUrl": "https://www.cilimao.cc/search?word={}&page=1"
     },
-    // {
-    //   "name": "网盘2",
-    //   "id": "quzhuanpan",
-    //   "color": "success",
-    //   "queryUrl": "http://www.58wangpan.com/search/kw{}"
-    // },
     {
       "name": "影视",
       "id": "ziyuan",
