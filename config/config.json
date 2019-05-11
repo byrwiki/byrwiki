@@ -69,7 +69,8 @@
 		  "name": "网盘2",
 		  "id": "wangpan007",
 		  "queryUrl": "https://wangpan007.com/share/kw?keyword={}",
-			"color": "success"
+			"color": "success",
+			 "display": false
 		},
 		
 		
