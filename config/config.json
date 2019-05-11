@@ -13,7 +13,8 @@
     {
       "name": "搜狗",
       "id": "sogou",
-      "queryUrl": "https://www.sogou.com/web?query={}"
+      "queryUrl": "https://www.sogou.com/web?query={}",
+			"display": false
     },
     {
       "name": "京东",
@@ -34,8 +35,9 @@
     {
       "name": "微信",
       "id": "weixin",
-      "queryUrl": "http://weixin.sogou.com/weixin?type=2&query={}&ie=utf8"
-    },
+      "queryUrl": "http://weixin.sogou.com/weixin?type=2&query={}&ie=utf8",
+       "display": false
+		},
     {
       "name": "知乎",
       "id": "zhihu",
@@ -52,11 +54,27 @@
       "queryUrl": "https://www.douban.com/search?q={}"
     },
     {
-      "name": "新网盘",
+      "name": "网盘1",
       "id": "panci",
        "color": "danger",
       "queryUrl": "https://www.cilimao.cc/search?word={}&page=1"
     },
+		   {
+		  "name": "网盘2",
+		  "id": "wangpan007",
+		  "queryUrl": "https://wangpan007.com/share/kw{}"
+		},
+		
+		
+		    {
+		  "name": "资源",
+		  "id": "ziyuan",
+		   "color": "success",
+		  "queryUrl": "http://www.acgsou.com/search.php?keyword={}"
+		},
+		
+		
+		
     {
       "name": "影视",
       "id": "ziyuan",
