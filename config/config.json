@@ -16,6 +16,12 @@
       "queryUrl": "https://www.sogou.com/web?query={}",
 			"display": false
     },
+		    {
+		  "name": "必应",
+		  "id": "biying",
+		  "queryUrl": "https://cn.bing.com/search?q={}"
+			},
+		
     {
       "name": "京东",
       "id": "jd",
@@ -56,13 +62,14 @@
     {
       "name": "网盘1",
       "id": "panci",
-       "color": "danger",
+        "color": "success",
       "queryUrl": "https://www.cilimao.cc/search?word={}&page=1"
     },
 		   {
 		  "name": "网盘2",
 		  "id": "wangpan007",
-		  "queryUrl": "https://wangpan007.com/share/kw{}"
+		  "queryUrl": "https://wangpan007.com/share/kw{}",
+			"color": "success"
 		},
 		
 		
