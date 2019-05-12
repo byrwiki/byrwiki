@@ -74,14 +74,7 @@
 		},
 		
 		
-		    {
-		  "name": "资源",
-		  "id": "ziyuan",
-		   "color": "success",
-		  "queryUrl": "http://www.acgsou.com/search.php?keyword={}"
-		},
-		
-		
+			
 		
     {
       "name": "影视",
