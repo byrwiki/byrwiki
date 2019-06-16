@@ -57,21 +57,19 @@
       "id": "douban",
       "queryUrl": "https://www.douban.com/search?q={}"
     },
-    {
-      "name": "网盘1",
-      "id": "panci",
-        "color": "success",
-      "queryUrl": "https://www.cilimao.cc/search?word={}&page=1"
-    },
+		    {
+		  "name": "网盘",
+		  "id": "58网盘",
+		  "queryUrl": "http://www.58wangpan.com/search/kw{}"
+		},
+		
 		   {
 		  "name": "网盘2",
 		  "id": "wangpan007",
-		  "queryUrl": "https://wangpan007.com/share/kw?keyword={}",
+		  "queryUrl": "http://www.panduoduo.net/s/name/{}",
 			"color": "success",
-			 "display": false
+			 "display": true
 		},
-		
-		
 			
 		
     {
