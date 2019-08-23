@@ -67,7 +67,13 @@
 		  "name": "网盘2",
 		  "id": "wangpan007",
 		  "queryUrl": "http://www.panduoduo.net/s/name/{}",
-			"color": "success",
+						 "display": true
+		},
+				   {
+		  "name": "网盘3",
+		  "id": "wangpan3",
+		  "queryUrl": "https://www.dalipan.com/search?keyword={}",
+			"color": "danger",
 			 "display": true
 		},
 			
