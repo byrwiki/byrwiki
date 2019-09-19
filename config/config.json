@@ -57,21 +57,10 @@
       "id": "douban",
       "queryUrl": "https://www.douban.com/search?q={}"
     },
-		    {
-		  "name": "网盘",
-		  "id": "58网盘",
-		  "queryUrl": "http://www.58wangpan.com/search/kw{}"
-		},
-		
-		   {
-		  "name": "网盘2",
-		  "id": "wangpan007",
-		  "queryUrl": "http://www.panduoduo.net/s/name/{}",
-						 "display": true
-		},
+		  
 				   {
-		  "name": "网盘3",
-		  "id": "wangpan3",
+		  "name": "网盘",
+		  "id": "wangpan",
 		  "queryUrl": "https://www.dalipan.com/search?keyword={}",
 			"color": "danger",
 			 "display": true
