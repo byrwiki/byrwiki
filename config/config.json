@@ -65,7 +65,19 @@
 			"color": "danger",
 			 "display": true
 		},
-			
+		   {
+		  "name": "网盘1",
+		  "id": "wangpan1",
+		  "queryUrl": "https://www.58wangpan.com/search/kw{}",
+			 "display": true
+		},
+		{
+		  "name": "网盘2",
+		  "id": "wangpan2",
+		  "queryUrl": "https://www.dalipan.com/search?keyword={}",
+			 "display": true
+		},
+		
 		
     {
       "name": "影视",
