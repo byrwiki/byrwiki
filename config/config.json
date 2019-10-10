@@ -74,7 +74,7 @@
 		{
 		  "name": "网盘2",
 		  "id": "wangpan2",
-		  "queryUrl": "https://www.dalipan.com/search?keyword={}",
+		  "queryUrl": "http://www.rufengso.net/s/name/{}",
 			 "display": true
 		},
 		
