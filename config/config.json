@@ -33,11 +33,6 @@
       "display": false
     },
     {
-      "name": "淘宝",
-      "id": "taobao",
-      "queryUrl": "https://s.taobao.com/search?q={}"
-    },
-    {
       "name": "微信",
       "id": "weixin",
       "queryUrl": "http://weixin.sogou.com/weixin?type=2&query={}&ie=utf8"
@@ -78,12 +73,6 @@
 			 "display": true
 		},
 		
-		
-    {
-      "name": "影视",
-      "id": "ziyuan",
-      "queryUrl": "http://ifkdy.com/?q={}&p=1"
-    },
     {
       "name": "地图",
       "id": "ditu",
