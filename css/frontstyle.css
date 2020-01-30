@@ -88,6 +88,16 @@ font-size: 20px;
 	
 }
 
+#zhongjian1{
+	font-size: 15px;
+	color: #ff0000;
+	text-align: center;
+	font-family: "微软雅黑";
+
+	
+}
+
+
 #guoqing{
 	font-size: 17px;
 	color: #ff0000;
@@ -286,7 +296,7 @@ font-size: 20px;
 #fenlei1{
 	text-align: center;
 	position: auto;
-	color: #f60;
+	color: #f00;
 	font-weight: bold;
 	font-size: 16px;
 	font-family: "微软雅黑";
