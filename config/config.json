@@ -51,24 +51,24 @@
       "id": "douban",
       "queryUrl": "https://www.douban.com/search?q={}"
     },
-		  
+	
+	{
+	  "name": "B站",
+	  "id": "bzhan",
+	  "queryUrl": "https://search.bilibili.com/all?keyword={}",
+	  "color": "danger"
+	},
+
 				   {
-		  "name": "网盘",
+		  "name": "网盘1",
 		  "id": "wangpan",
-		  "queryUrl": "https://www.dalipan.com/search?keyword={}",
-			"color": "danger",
-			 "display": true
+		  "queryUrl": "https://www.dalipan.com/search?keyword={}"
+
 		},
 		   {
-		  "name": "网盘1",
+		  "name": "网盘2",
 		  "id": "wangpan1",
 		  "queryUrl": "https://www.58wangpan.com/search/kw{}",
-			 "display": true
-		},
-		{
-		  "name": "网盘2",
-		  "id": "wangpan2",
-		  "queryUrl": "http://www.rufengso.net/s/name/{}",
 			 "display": true
 		},
 		
