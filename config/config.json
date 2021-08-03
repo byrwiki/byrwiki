@@ -55,7 +55,12 @@
 	{
 	  "name": "B站",
 	  "id": "bzhan",
-	  "queryUrl": "https://search.bilibili.com/all?keyword={}",
+	  "queryUrl": "https://search.bilibili.com/all?keyword={}"
+	},
+	{
+	  "name": "影视",
+	  "id": "yingshi",
+	  "queryUrl": "http://www.9rmb.com/search?wd={}",
 	  "color": "danger"
 	},
 
@@ -71,6 +76,13 @@
 		  "queryUrl": "https://www.58wangpan.com/search/kw{}",
 			 "display": true
 		},
+		{
+		  "name": "网盘3",
+		  "id": "wangpan2",
+		  "queryUrl": "https://www.wuyasou.com/search?keyword={}",
+			 "display": true
+		},
+		
 		
     {
       "name": "地图",
