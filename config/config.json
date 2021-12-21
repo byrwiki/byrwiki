@@ -60,29 +60,10 @@
 	{
 	  "name": "影视",
 	  "id": "yingshi",
-	  "queryUrl": "http://www.9rmb.com/search?wd={}",
-	  "color": "danger"
+	  "queryUrl": "https://www.bd2020.com/search.jspx?q={}",
+	  "color": "success"
 	},
 
-				   {
-		  "name": "网盘1",
-		  "id": "wangpan",
-		  "queryUrl": "https://www.dalipan.com/search?keyword={}"
-
-		},
-		   {
-		  "name": "网盘2",
-		  "id": "wangpan1",
-		  "queryUrl": "https://www.58wangpan.com/search/kw{}",
-			 "display": true
-		},
-		{
-		  "name": "网盘3",
-		  "id": "wangpan2",
-		  "queryUrl": "https://www.wuyasou.com/search?keyword={}",
-			 "display": true
-		},
-		
 		
     {
       "name": "地图",
