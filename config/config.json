@@ -58,26 +58,22 @@
 	  "queryUrl": "https://search.bilibili.com/all?keyword={}"
 	},
 	{
-	  "name": "资源",
-	  "id": "yingshi",
-	  "queryUrl": "https://www.bd2020.com/search.jspx?q={}"
-	},
+	  "name": "抖音",
+	  "id": "douyin",
+	  "queryUrl": "https://www.douyin.com/search/{}",
+	  "color": "danger"
+	},	
 	{
 	  "name": "影视1",
 	  "id": "zaixian",
 	  "queryUrl": "https://www.jiujiukanpian.com/search?wd={}",
 	  "color": "success"
-	},
-	{
-	  "name": "影视2",
-	  "id": "zaixiankan2",
-	  "queryUrl": "https://aidi.tv/vsearch/-------------.html?wd={}&submit=",
-	  "color": "danger"
 	},		
     {
       "name": "地图",
       "id": "ditu",
       "queryUrl": "http://ditu.amap.com/search?query={} "
     }
+		
   ]
 }
