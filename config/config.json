@@ -71,8 +71,8 @@
 	},		
     {
       "name": "地图",
-      "id": "baiduditu",
-      "queryUrl": "https://map.baidu.com/search/{} "
+      "id": "gaodeditu",
+      "queryUrl": "http://ditu.amap.com/search?query={}"
     }
 		
   ]
